@@ -1,0 +1,2830 @@
+{
+  "experiment": "short_real",
+  "n_result_files": 5,
+  "reference": "b2_erup",
+  "rows": [
+    {
+      "variant": "b0_no_filter",
+      "label": "B0 \u00b7 YOLOv3 + BPW aug, no filter",
+      "dataset": "dawn",
+      "subset": "all",
+      "n_seeds": 1,
+      "seeds": [
+        0
+      ],
+      "n_images": 1027,
+      "n_gt": 7199,
+      "trained": false,
+      "map50": {
+        "n": 1,
+        "mean": 0.6034016612895178,
+        "std": null,
+        "ci": null
+      },
+      "map50_95": {
+        "n": 1,
+        "mean": 0.389232832076882,
+        "std": null,
+        "ci": null
+      },
+      "precision": {
+        "n": 1,
+        "mean": 0.9045418006430869,
+        "std": null,
+        "ci": null
+      },
+      "recall": {
+        "n": 1,
+        "mean": 0.6252257257952494,
+        "std": null,
+        "ci": null
+      },
+      "ap_small": {
+        "n": 1,
+        "mean": 0.06618582269001605,
+        "std": null,
+        "ci": null
+      },
+      "ap_medium": {
+        "n": 1,
+        "mean": 0.34406033431090305,
+        "std": null,
+        "ci": null
+      },
+      "ap_large": {
+        "n": 1,
+        "mean": 0.580664813983674,
+        "std": null,
+        "ci": null
+      },
+      "recall_dark": {
+        "n": 1,
+        "mean": 0.7329166666666667,
+        "std": null,
+        "ci": null
+      },
+      "recall_medium": {
+        "n": 1,
+        "mean": 0.6173405585660692,
+        "std": null,
+        "ci": null
+      },
+      "recall_bright": {
+        "n": 1,
+        "mean": 0.5254166666666666,
+        "std": null,
+        "ci": null
+      },
+      "nsr": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "nsr_final": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb_final": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      }
+    },
+    {
+      "variant": "b0_no_filter",
+      "label": "B0 \u00b7 YOLOv3 + BPW aug, no filter",
+      "dataset": "dawn",
+      "subset": "fog",
+      "n_seeds": 1,
+      "seeds": [
+        0
+      ],
+      "n_images": 300,
+      "n_gt": 1797,
+      "trained": false,
+      "map50": {
+        "n": 1,
+        "mean": 0.6344823217631136,
+        "std": null,
+        "ci": null
+      },
+      "map50_95": {
+        "n": 1,
+        "mean": 0.4027504509912013,
+        "std": null,
+        "ci": null
+      },
+      "precision": {
+        "n": 1,
+        "mean": 0.9172185430463576,
+        "std": null,
+        "ci": null
+      },
+      "recall": {
+        "n": 1,
+        "mean": 0.6165831942125766,
+        "std": null,
+        "ci": null
+      },
+      "ap_small": {
+        "n": 1,
+        "mean": 0.07716449389789223,
+        "std": null,
+        "ci": null
+      },
+      "ap_medium": {
+        "n": 1,
+        "mean": 0.3919514374384796,
+        "std": null,
+        "ci": null
+      },
+      "ap_large": {
+        "n": 1,
+        "mean": 0.6271141866563338,
+        "std": null,
+        "ci": null
+      },
+      "recall_dark": {
+        "n": 1,
+        "mean": 0.7178631051752922,
+        "std": null,
+        "ci": null
+      },
+      "recall_medium": {
+        "n": 1,
+        "mean": 0.6193656093489148,
+        "std": null,
+        "ci": null
+      },
+      "recall_bright": {
+        "n": 1,
+        "mean": 0.5125208681135225,
+        "std": null,
+        "ci": null
+      },
+      "nsr": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "nsr_final": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb_final": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      }
+    },
+    {
+      "variant": "b0_no_filter",
+      "label": "B0 \u00b7 YOLOv3 + BPW aug, no filter",
+      "dataset": "dawn",
+      "subset": "rain",
+      "n_seeds": 1,
+      "seeds": [
+        0
+      ],
+      "n_images": 200,
+      "n_gt": 1400,
+      "trained": false,
+      "map50": {
+        "n": 1,
+        "mean": 0.6603790619947438,
+        "std": null,
+        "ci": null
+      },
+      "map50_95": {
+        "n": 1,
+        "mean": 0.4544853913520369,
+        "std": null,
+        "ci": null
+      },
+      "precision": {
+        "n": 1,
+        "mean": 0.8895238095238095,
+        "std": null,
+        "ci": null
+      },
+      "recall": {
+        "n": 1,
+        "mean": 0.6671428571428571,
+        "std": null,
+        "ci": null
+      },
+      "ap_small": {
+        "n": 1,
+        "mean": 0.037680663159726985,
+        "std": null,
+        "ci": null
+      },
+      "ap_medium": {
+        "n": 1,
+        "mean": 0.24909303119630302,
+        "std": null,
+        "ci": null
+      },
+      "ap_large": {
+        "n": 1,
+        "mean": 0.6014287906601927,
+        "std": null,
+        "ci": null
+      },
+      "recall_dark": {
+        "n": 1,
+        "mean": 0.7794432548179872,
+        "std": null,
+        "ci": null
+      },
+      "recall_medium": {
+        "n": 1,
+        "mean": 0.6609442060085837,
+        "std": null,
+        "ci": null
+      },
+      "recall_bright": {
+        "n": 1,
+        "mean": 0.5610278372591007,
+        "std": null,
+        "ci": null
+      },
+      "nsr": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "nsr_final": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb_final": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      }
+    },
+    {
+      "variant": "b0_no_filter",
+      "label": "B0 \u00b7 YOLOv3 + BPW aug, no filter",
+      "dataset": "dawn",
+      "subset": "sand",
+      "n_seeds": 1,
+      "seeds": [
+        0
+      ],
+      "n_images": 323,
+      "n_gt": 2039,
+      "trained": false,
+      "map50": {
+        "n": 1,
+        "mean": 0.5861896293740154,
+        "std": null,
+        "ci": null
+      },
+      "map50_95": {
+        "n": 1,
+        "mean": 0.39492061380579424,
+        "std": null,
+        "ci": null
+      },
+      "precision": {
+        "n": 1,
+        "mean": 0.9314369073668854,
+        "std": null,
+        "ci": null
+      },
+      "recall": {
+        "n": 1,
+        "mean": 0.6262873957822462,
+        "std": null,
+        "ci": null
+      },
+      "ap_small": {
+        "n": 1,
+        "mean": 0.10937831893707375,
+        "std": null,
+        "ci": null
+      },
+      "ap_medium": {
+        "n": 1,
+        "mean": 0.30940113372950784,
+        "std": null,
+        "ci": null
+      },
+      "ap_large": {
+        "n": 1,
+        "mean": 0.6009298483672442,
+        "std": null,
+        "ci": null
+      },
+      "recall_dark": {
+        "n": 1,
+        "mean": 0.7558823529411764,
+        "std": null,
+        "ci": null
+      },
+      "recall_medium": {
+        "n": 1,
+        "mean": 0.6347569955817378,
+        "std": null,
+        "ci": null
+      },
+      "recall_bright": {
+        "n": 1,
+        "mean": 0.48823529411764705,
+        "std": null,
+        "ci": null
+      },
+      "nsr": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "nsr_final": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb_final": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      }
+    },
+    {
+      "variant": "b0_no_filter",
+      "label": "B0 \u00b7 YOLOv3 + BPW aug, no filter",
+      "dataset": "dawn",
+      "subset": "snow",
+      "n_seeds": 1,
+      "seeds": [
+        0
+      ],
+      "n_images": 204,
+      "n_gt": 1963,
+      "trained": false,
+      "map50": {
+        "n": 1,
+        "mean": 0.8265398013085525,
+        "std": null,
+        "ci": null
+      },
+      "map50_95": {
+        "n": 1,
+        "mean": 0.4962640957957249,
+        "std": null,
+        "ci": null
+      },
+      "precision": {
+        "n": 1,
+        "mean": 0.8775055679287305,
+        "std": null,
+        "ci": null
+      },
+      "recall": {
+        "n": 1,
+        "mean": 0.6021395822720326,
+        "std": null,
+        "ci": null
+      },
+      "ap_small": {
+        "n": 1,
+        "mean": 0.10532230362467218,
+        "std": null,
+        "ci": null
+      },
+      "ap_medium": {
+        "n": 1,
+        "mean": 0.32176691527051937,
+        "std": null,
+        "ci": null
+      },
+      "ap_large": {
+        "n": 1,
+        "mean": 0.6103587737558389,
+        "std": null,
+        "ci": null
+      },
+      "recall_dark": {
+        "n": 1,
+        "mean": 0.6641221374045801,
+        "std": null,
+        "ci": null
+      },
+      "recall_medium": {
+        "n": 1,
+        "mean": 0.6284403669724771,
+        "std": null,
+        "ci": null
+      },
+      "recall_bright": {
+        "n": 1,
+        "mean": 0.5137614678899083,
+        "std": null,
+        "ci": null
+      },
+      "nsr": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "nsr_final": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb_final": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      }
+    },
+    {
+      "variant": "b2_erup",
+      "label": "B2 \u00b7 ERUP (BPW + KBL)",
+      "dataset": "dawn",
+      "subset": "all",
+      "n_seeds": 1,
+      "seeds": [
+        0
+      ],
+      "n_images": 1027,
+      "n_gt": 7199,
+      "trained": true,
+      "map50": {
+        "n": 1,
+        "mean": 0.5700716384080081,
+        "std": null,
+        "ci": null
+      },
+      "map50_95": {
+        "n": 1,
+        "mean": 0.3669169864033982,
+        "std": null,
+        "ci": null
+      },
+      "precision": {
+        "n": 1,
+        "mean": 0.9291722000885347,
+        "std": null,
+        "ci": null
+      },
+      "recall": {
+        "n": 1,
+        "mean": 0.5831365467426032,
+        "std": null,
+        "ci": null
+      },
+      "ap_small": {
+        "n": 1,
+        "mean": 0.05352775304531961,
+        "std": null,
+        "ci": null
+      },
+      "ap_medium": {
+        "n": 1,
+        "mean": 0.31398395192704964,
+        "std": null,
+        "ci": null
+      },
+      "ap_large": {
+        "n": 1,
+        "mean": 0.5731266128182038,
+        "std": null,
+        "ci": null
+      },
+      "recall_dark": {
+        "n": 1,
+        "mean": 0.6991666666666667,
+        "std": null,
+        "ci": null
+      },
+      "recall_medium": {
+        "n": 1,
+        "mean": 0.5752396832013339,
+        "std": null,
+        "ci": null
+      },
+      "recall_bright": {
+        "n": 1,
+        "mean": 0.475,
+        "std": null,
+        "ci": null
+      },
+      "nsr": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb": {
+        "n": 1,
+        "mean": 1.3752105049905023e-06,
+        "std": null,
+        "ci": null
+      },
+      "nsr_final": {
+        "n": 1,
+        "mean": 4.366324702382633e-08,
+        "std": null,
+        "ci": null
+      },
+      "brb_final": {
+        "n": 1,
+        "mean": 3.198904417539778e-07,
+        "std": null,
+        "ci": null
+      }
+    },
+    {
+      "variant": "b2_erup",
+      "label": "B2 \u00b7 ERUP (BPW + KBL)",
+      "dataset": "dawn",
+      "subset": "fog",
+      "n_seeds": 1,
+      "seeds": [
+        0
+      ],
+      "n_images": 300,
+      "n_gt": 1797,
+      "trained": true,
+      "map50": {
+        "n": 1,
+        "mean": 0.5974548160553013,
+        "std": null,
+        "ci": null
+      },
+      "map50_95": {
+        "n": 1,
+        "mean": 0.3765054202940469,
+        "std": null,
+        "ci": null
+      },
+      "precision": {
+        "n": 1,
+        "mean": 0.926391382405745,
+        "std": null,
+        "ci": null
+      },
+      "recall": {
+        "n": 1,
+        "mean": 0.5742904841402338,
+        "std": null,
+        "ci": null
+      },
+      "ap_small": {
+        "n": 1,
+        "mean": 0.07057480734756125,
+        "std": null,
+        "ci": null
+      },
+      "ap_medium": {
+        "n": 1,
+        "mean": 0.3537827793438078,
+        "std": null,
+        "ci": null
+      },
+      "ap_large": {
+        "n": 1,
+        "mean": 0.6335195081812133,
+        "std": null,
+        "ci": null
+      },
+      "recall_dark": {
+        "n": 1,
+        "mean": 0.6878130217028381,
+        "std": null,
+        "ci": null
+      },
+      "recall_medium": {
+        "n": 1,
+        "mean": 0.5626043405676127,
+        "std": null,
+        "ci": null
+      },
+      "recall_bright": {
+        "n": 1,
+        "mean": 0.4724540901502504,
+        "std": null,
+        "ci": null
+      },
+      "nsr": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb": {
+        "n": 1,
+        "mean": 9.624241409511627e-07,
+        "std": null,
+        "ci": null
+      },
+      "nsr_final": {
+        "n": 1,
+        "mean": 1.6608205442025793e-08,
+        "std": null,
+        "ci": null
+      },
+      "brb_final": {
+        "n": 1,
+        "mean": 2.2357397470823953e-07,
+        "std": null,
+        "ci": null
+      }
+    },
+    {
+      "variant": "b2_erup",
+      "label": "B2 \u00b7 ERUP (BPW + KBL)",
+      "dataset": "dawn",
+      "subset": "rain",
+      "n_seeds": 1,
+      "seeds": [
+        0
+      ],
+      "n_images": 200,
+      "n_gt": 1400,
+      "trained": true,
+      "map50": {
+        "n": 1,
+        "mean": 0.6104961810058548,
+        "std": null,
+        "ci": null
+      },
+      "map50_95": {
+        "n": 1,
+        "mean": 0.4069789252716472,
+        "std": null,
+        "ci": null
+      },
+      "precision": {
+        "n": 1,
+        "mean": 0.9288025889967637,
+        "std": null,
+        "ci": null
+      },
+      "recall": {
+        "n": 1,
+        "mean": 0.615,
+        "std": null,
+        "ci": null
+      },
+      "ap_small": {
+        "n": 1,
+        "mean": 0.03089257828552503,
+        "std": null,
+        "ci": null
+      },
+      "ap_medium": {
+        "n": 1,
+        "mean": 0.22655756244980824,
+        "std": null,
+        "ci": null
+      },
+      "ap_large": {
+        "n": 1,
+        "mean": 0.5643991165444436,
+        "std": null,
+        "ci": null
+      },
+      "recall_dark": {
+        "n": 1,
+        "mean": 0.7430406852248393,
+        "std": null,
+        "ci": null
+      },
+      "recall_medium": {
+        "n": 1,
+        "mean": 0.5944206008583691,
+        "std": null,
+        "ci": null
+      },
+      "recall_bright": {
+        "n": 1,
+        "mean": 0.5074946466809421,
+        "std": null,
+        "ci": null
+      },
+      "nsr": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb": {
+        "n": 1,
+        "mean": 2.034900056630749e-06,
+        "std": null,
+        "ci": null
+      },
+      "nsr_final": {
+        "n": 1,
+        "mean": 9.964923265215476e-08,
+        "std": null,
+        "ci": null
+      },
+      "brb_final": {
+        "n": 1,
+        "mean": 6.605883965258869e-07,
+        "std": null,
+        "ci": null
+      }
+    },
+    {
+      "variant": "b2_erup",
+      "label": "B2 \u00b7 ERUP (BPW + KBL)",
+      "dataset": "dawn",
+      "subset": "sand",
+      "n_seeds": 1,
+      "seeds": [
+        0
+      ],
+      "n_images": 323,
+      "n_gt": 2039,
+      "trained": true,
+      "map50": {
+        "n": 1,
+        "mean": 0.560722993026466,
+        "std": null,
+        "ci": null
+      },
+      "map50_95": {
+        "n": 1,
+        "mean": 0.3747731356148775,
+        "std": null,
+        "ci": null
+      },
+      "precision": {
+        "n": 1,
+        "mean": 0.9399538106235565,
+        "std": null,
+        "ci": null
+      },
+      "recall": {
+        "n": 1,
+        "mean": 0.5988229524276606,
+        "std": null,
+        "ci": null
+      },
+      "ap_small": {
+        "n": 1,
+        "mean": 0.08690657264964087,
+        "std": null,
+        "ci": null
+      },
+      "ap_medium": {
+        "n": 1,
+        "mean": 0.2855031457949718,
+        "std": null,
+        "ci": null
+      },
+      "ap_large": {
+        "n": 1,
+        "mean": 0.5903713082523288,
+        "std": null,
+        "ci": null
+      },
+      "recall_dark": {
+        "n": 1,
+        "mean": 0.7352941176470589,
+        "std": null,
+        "ci": null
+      },
+      "recall_medium": {
+        "n": 1,
+        "mean": 0.6023564064801178,
+        "std": null,
+        "ci": null
+      },
+      "recall_bright": {
+        "n": 1,
+        "mean": 0.4588235294117647,
+        "std": null,
+        "ci": null
+      },
+      "nsr": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb": {
+        "n": 1,
+        "mean": 4.928160464942388e-07,
+        "std": null,
+        "ci": null
+      },
+      "nsr_final": {
+        "n": 1,
+        "mean": 3.0851155619862154e-08,
+        "std": null,
+        "ci": null
+      },
+      "brb_final": {
+        "n": 1,
+        "mean": 8.781131283088735e-08,
+        "std": null,
+        "ci": null
+      }
+    },
+    {
+      "variant": "b2_erup",
+      "label": "B2 \u00b7 ERUP (BPW + KBL)",
+      "dataset": "dawn",
+      "subset": "snow",
+      "n_seeds": 1,
+      "seeds": [
+        0
+      ],
+      "n_images": 204,
+      "n_gt": 1963,
+      "trained": true,
+      "map50": {
+        "n": 1,
+        "mean": 0.7931917198329546,
+        "std": null,
+        "ci": null
+      },
+      "map50_95": {
+        "n": 1,
+        "mean": 0.4907097350065362,
+        "std": null,
+        "ci": null
+      },
+      "precision": {
+        "n": 1,
+        "mean": 0.9202037351443124,
+        "std": null,
+        "ci": null
+      },
+      "recall": {
+        "n": 1,
+        "mean": 0.5522159959246052,
+        "std": null,
+        "ci": null
+      },
+      "ap_small": {
+        "n": 1,
+        "mean": 0.06198864410764511,
+        "std": null,
+        "ci": null
+      },
+      "ap_medium": {
+        "n": 1,
+        "mean": 0.2967867953383668,
+        "std": null,
+        "ci": null
+      },
+      "ap_large": {
+        "n": 1,
+        "mean": 0.5874593403001661,
+        "std": null,
+        "ci": null
+      },
+      "recall_dark": {
+        "n": 1,
+        "mean": 0.6213740458015267,
+        "std": null,
+        "ci": null
+      },
+      "recall_medium": {
+        "n": 1,
+        "mean": 0.5963302752293578,
+        "std": null,
+        "ci": null
+      },
+      "recall_bright": {
+        "n": 1,
+        "mean": 0.43883792048929665,
+        "std": null,
+        "ci": null
+      },
+      "nsr": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb": {
+        "n": 1,
+        "mean": 2.732619372529942e-06,
+        "std": null,
+        "ci": null
+      },
+      "nsr_final": {
+        "n": 1,
+        "mean": 4.884766306478174e-08,
+        "std": null,
+        "ci": null
+      },
+      "brb_final": {
+        "n": 1,
+        "mean": 4.949733231338695e-07,
+        "std": null,
+        "ci": null
+      }
+    },
+    {
+      "variant": "b3_kbl_only",
+      "label": "B3 \u00b7 ERUP KBL-only",
+      "dataset": "dawn",
+      "subset": "all",
+      "n_seeds": 1,
+      "seeds": [
+        0
+      ],
+      "n_images": 1027,
+      "n_gt": 7199,
+      "trained": true,
+      "map50": {
+        "n": 1,
+        "mean": 0.5577687311640546,
+        "std": null,
+        "ci": null
+      },
+      "map50_95": {
+        "n": 1,
+        "mean": 0.36432073796116965,
+        "std": null,
+        "ci": null
+      },
+      "precision": {
+        "n": 1,
+        "mean": 0.9282439248051353,
+        "std": null,
+        "ci": null
+      },
+      "recall": {
+        "n": 1,
+        "mean": 0.5624392276705098,
+        "std": null,
+        "ci": null
+      },
+      "ap_small": {
+        "n": 1,
+        "mean": 0.05262576783713927,
+        "std": null,
+        "ci": null
+      },
+      "ap_medium": {
+        "n": 1,
+        "mean": 0.2996616396421662,
+        "std": null,
+        "ci": null
+      },
+      "ap_large": {
+        "n": 1,
+        "mean": 0.5793965326921465,
+        "std": null,
+        "ci": null
+      },
+      "recall_dark": {
+        "n": 1,
+        "mean": 0.68625,
+        "std": null,
+        "ci": null
+      },
+      "recall_medium": {
+        "n": 1,
+        "mean": 0.5739891621508962,
+        "std": null,
+        "ci": null
+      },
+      "recall_bright": {
+        "n": 1,
+        "mean": 0.4270833333333333,
+        "std": null,
+        "ci": null
+      },
+      "nsr": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "nsr_final": {
+        "n": 1,
+        "mean": 0.00014261386790115943,
+        "std": null,
+        "ci": null
+      },
+      "brb_final": {
+        "n": 1,
+        "mean": 0.0010463399225094396,
+        "std": null,
+        "ci": null
+      }
+    },
+    {
+      "variant": "b3_kbl_only",
+      "label": "B3 \u00b7 ERUP KBL-only",
+      "dataset": "dawn",
+      "subset": "fog",
+      "n_seeds": 1,
+      "seeds": [
+        0
+      ],
+      "n_images": 300,
+      "n_gt": 1797,
+      "trained": true,
+      "map50": {
+        "n": 1,
+        "mean": 0.6056177117645017,
+        "std": null,
+        "ci": null
+      },
+      "map50_95": {
+        "n": 1,
+        "mean": 0.39126758820764806,
+        "std": null,
+        "ci": null
+      },
+      "precision": {
+        "n": 1,
+        "mean": 0.930379746835443,
+        "std": null,
+        "ci": null
+      },
+      "recall": {
+        "n": 1,
+        "mean": 0.5726210350584308,
+        "std": null,
+        "ci": null
+      },
+      "ap_small": {
+        "n": 1,
+        "mean": 0.07534130189272675,
+        "std": null,
+        "ci": null
+      },
+      "ap_medium": {
+        "n": 1,
+        "mean": 0.36796336657292245,
+        "std": null,
+        "ci": null
+      },
+      "ap_large": {
+        "n": 1,
+        "mean": 0.6439108788263344,
+        "std": null,
+        "ci": null
+      },
+      "recall_dark": {
+        "n": 1,
+        "mean": 0.6811352253756261,
+        "std": null,
+        "ci": null
+      },
+      "recall_medium": {
+        "n": 1,
+        "mean": 0.6026711185308848,
+        "std": null,
+        "ci": null
+      },
+      "recall_bright": {
+        "n": 1,
+        "mean": 0.4340567612687813,
+        "std": null,
+        "ci": null
+      },
+      "nsr": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "nsr_final": {
+        "n": 1,
+        "mean": 6.140053525693172e-05,
+        "std": null,
+        "ci": null
+      },
+      "brb_final": {
+        "n": 1,
+        "mean": 0.0007083916346775254,
+        "std": null,
+        "ci": null
+      }
+    },
+    {
+      "variant": "b3_kbl_only",
+      "label": "B3 \u00b7 ERUP KBL-only",
+      "dataset": "dawn",
+      "subset": "rain",
+      "n_seeds": 1,
+      "seeds": [
+        0
+      ],
+      "n_images": 200,
+      "n_gt": 1400,
+      "trained": true,
+      "map50": {
+        "n": 1,
+        "mean": 0.643822463173078,
+        "std": null,
+        "ci": null
+      },
+      "map50_95": {
+        "n": 1,
+        "mean": 0.42952427183679587,
+        "std": null,
+        "ci": null
+      },
+      "precision": {
+        "n": 1,
+        "mean": 0.9242590559824369,
+        "std": null,
+        "ci": null
+      },
+      "recall": {
+        "n": 1,
+        "mean": 0.6014285714285714,
+        "std": null,
+        "ci": null
+      },
+      "ap_small": {
+        "n": 1,
+        "mean": 0.02629259476710344,
+        "std": null,
+        "ci": null
+      },
+      "ap_medium": {
+        "n": 1,
+        "mean": 0.20555914901671196,
+        "std": null,
+        "ci": null
+      },
+      "ap_large": {
+        "n": 1,
+        "mean": 0.6136401105072464,
+        "std": null,
+        "ci": null
+      },
+      "recall_dark": {
+        "n": 1,
+        "mean": 0.7473233404710921,
+        "std": null,
+        "ci": null
+      },
+      "recall_medium": {
+        "n": 1,
+        "mean": 0.5965665236051502,
+        "std": null,
+        "ci": null
+      },
+      "recall_bright": {
+        "n": 1,
+        "mean": 0.4603854389721627,
+        "std": null,
+        "ci": null
+      },
+      "nsr": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "nsr_final": {
+        "n": 1,
+        "mean": 0.00019115214077601196,
+        "std": null,
+        "ci": null
+      },
+      "brb_final": {
+        "n": 1,
+        "mean": 0.00125899266722854,
+        "std": null,
+        "ci": null
+      }
+    },
+    {
+      "variant": "b3_kbl_only",
+      "label": "B3 \u00b7 ERUP KBL-only",
+      "dataset": "dawn",
+      "subset": "sand",
+      "n_seeds": 1,
+      "seeds": [
+        0
+      ],
+      "n_images": 323,
+      "n_gt": 2039,
+      "trained": true,
+      "map50": {
+        "n": 1,
+        "mean": 0.5314064395027369,
+        "std": null,
+        "ci": null
+      },
+      "map50_95": {
+        "n": 1,
+        "mean": 0.36064879438272873,
+        "std": null,
+        "ci": null
+      },
+      "precision": {
+        "n": 1,
+        "mean": 0.9359079704190633,
+        "std": null,
+        "ci": null
+      },
+      "recall": {
+        "n": 1,
+        "mean": 0.5586071603727317,
+        "std": null,
+        "ci": null
+      },
+      "ap_small": {
+        "n": 1,
+        "mean": 0.07888357227628695,
+        "std": null,
+        "ci": null
+      },
+      "ap_medium": {
+        "n": 1,
+        "mean": 0.2627353311365054,
+        "std": null,
+        "ci": null
+      },
+      "ap_large": {
+        "n": 1,
+        "mean": 0.5907618571957161,
+        "std": null,
+        "ci": null
+      },
+      "recall_dark": {
+        "n": 1,
+        "mean": 0.711764705882353,
+        "std": null,
+        "ci": null
+      },
+      "recall_medium": {
+        "n": 1,
+        "mean": 0.5714285714285714,
+        "std": null,
+        "ci": null
+      },
+      "recall_bright": {
+        "n": 1,
+        "mean": 0.3926470588235294,
+        "std": null,
+        "ci": null
+      },
+      "nsr": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "nsr_final": {
+        "n": 1,
+        "mean": 5.5238994369664465e-05,
+        "std": null,
+        "ci": null
+      },
+      "brb_final": {
+        "n": 1,
+        "mean": 0.0007999046939413374,
+        "std": null,
+        "ci": null
+      }
+    },
+    {
+      "variant": "b3_kbl_only",
+      "label": "B3 \u00b7 ERUP KBL-only",
+      "dataset": "dawn",
+      "subset": "snow",
+      "n_seeds": 1,
+      "seeds": [
+        0
+      ],
+      "n_images": 204,
+      "n_gt": 1963,
+      "trained": true,
+      "map50": {
+        "n": 1,
+        "mean": 0.7910878932173777,
+        "std": null,
+        "ci": null
+      },
+      "map50_95": {
+        "n": 1,
+        "mean": 0.48118149315151226,
+        "std": null,
+        "ci": null
+      },
+      "precision": {
+        "n": 1,
+        "mean": 0.9210992907801419,
+        "std": null,
+        "ci": null
+      },
+      "recall": {
+        "n": 1,
+        "mean": 0.5292919001528273,
+        "std": null,
+        "ci": null
+      },
+      "ap_small": {
+        "n": 1,
+        "mean": 0.08343575658316006,
+        "std": null,
+        "ci": null
+      },
+      "ap_medium": {
+        "n": 1,
+        "mean": 0.2504175857553429,
+        "std": null,
+        "ci": null
+      },
+      "ap_large": {
+        "n": 1,
+        "mean": 0.5891452805500584,
+        "std": null,
+        "ci": null
+      },
+      "recall_dark": {
+        "n": 1,
+        "mean": 0.6,
+        "std": null,
+        "ci": null
+      },
+      "recall_medium": {
+        "n": 1,
+        "mean": 0.5856269113149847,
+        "std": null,
+        "ci": null
+      },
+      "recall_bright": {
+        "n": 1,
+        "mean": 0.40214067278287463,
+        "std": null,
+        "ci": null
+      },
+      "nsr": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "nsr_final": {
+        "n": 1,
+        "mean": 0.0003528022471608197,
+        "std": null,
+        "ci": null
+      },
+      "brb_final": {
+        "n": 1,
+        "mean": 0.001725028727574396,
+        "std": null,
+        "ci": null
+      }
+    },
+    {
+      "variant": "b4_global_gate",
+      "label": "B4 \u00b7 Global per-image gate",
+      "dataset": "dawn",
+      "subset": "all",
+      "n_seeds": 1,
+      "seeds": [
+        0
+      ],
+      "n_images": 1027,
+      "n_gt": 7199,
+      "trained": true,
+      "map50": {
+        "n": 1,
+        "mean": 0.583807096139251,
+        "std": null,
+        "ci": null
+      },
+      "map50_95": {
+        "n": 1,
+        "mean": 0.37063318397912787,
+        "std": null,
+        "ci": null
+      },
+      "precision": {
+        "n": 1,
+        "mean": 0.9162730785744955,
+        "std": null,
+        "ci": null
+      },
+      "recall": {
+        "n": 1,
+        "mean": 0.5928601194610362,
+        "std": null,
+        "ci": null
+      },
+      "ap_small": {
+        "n": 1,
+        "mean": 0.05298029918908579,
+        "std": null,
+        "ci": null
+      },
+      "ap_medium": {
+        "n": 1,
+        "mean": 0.30794457698518424,
+        "std": null,
+        "ci": null
+      },
+      "ap_large": {
+        "n": 1,
+        "mean": 0.5752648244506696,
+        "std": null,
+        "ci": null
+      },
+      "recall_dark": {
+        "n": 1,
+        "mean": 0.7008333333333333,
+        "std": null,
+        "ci": null
+      },
+      "recall_medium": {
+        "n": 1,
+        "mean": 0.5852438516048354,
+        "std": null,
+        "ci": null
+      },
+      "recall_bright": {
+        "n": 1,
+        "mean": 0.4925,
+        "std": null,
+        "ci": null
+      },
+      "nsr": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb": {
+        "n": 1,
+        "mean": 5.734410929698788e-11,
+        "std": null,
+        "ci": null
+      },
+      "nsr_final": {
+        "n": 1,
+        "mean": 0.007195062723943072,
+        "std": null,
+        "ci": null
+      },
+      "brb_final": {
+        "n": 1,
+        "mean": 0.0030173123550884507,
+        "std": null,
+        "ci": null
+      }
+    },
+    {
+      "variant": "b4_global_gate",
+      "label": "B4 \u00b7 Global per-image gate",
+      "dataset": "dawn",
+      "subset": "fog",
+      "n_seeds": 1,
+      "seeds": [
+        0
+      ],
+      "n_images": 300,
+      "n_gt": 1797,
+      "trained": true,
+      "map50": {
+        "n": 1,
+        "mean": 0.6064384831656531,
+        "std": null,
+        "ci": null
+      },
+      "map50_95": {
+        "n": 1,
+        "mean": 0.3805118343220978,
+        "std": null,
+        "ci": null
+      },
+      "precision": {
+        "n": 1,
+        "mean": 0.9197207678883071,
+        "std": null,
+        "ci": null
+      },
+      "recall": {
+        "n": 1,
+        "mean": 0.5865331107401224,
+        "std": null,
+        "ci": null
+      },
+      "ap_small": {
+        "n": 1,
+        "mean": 0.06374642303415906,
+        "std": null,
+        "ci": null
+      },
+      "ap_medium": {
+        "n": 1,
+        "mean": 0.3531847587190924,
+        "std": null,
+        "ci": null
+      },
+      "ap_large": {
+        "n": 1,
+        "mean": 0.6181013433572354,
+        "std": null,
+        "ci": null
+      },
+      "recall_dark": {
+        "n": 1,
+        "mean": 0.6811352253756261,
+        "std": null,
+        "ci": null
+      },
+      "recall_medium": {
+        "n": 1,
+        "mean": 0.5893155258764607,
+        "std": null,
+        "ci": null
+      },
+      "recall_bright": {
+        "n": 1,
+        "mean": 0.48914858096828046,
+        "std": null,
+        "ci": null
+      },
+      "nsr": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb": {
+        "n": 1,
+        "mean": 5.345779367414819e-13,
+        "std": null,
+        "ci": null
+      },
+      "nsr_final": {
+        "n": 1,
+        "mean": 0.005961017112717855,
+        "std": null,
+        "ci": null
+      },
+      "brb_final": {
+        "n": 1,
+        "mean": 0.0023549405954418462,
+        "std": null,
+        "ci": null
+      }
+    },
+    {
+      "variant": "b4_global_gate",
+      "label": "B4 \u00b7 Global per-image gate",
+      "dataset": "dawn",
+      "subset": "rain",
+      "n_seeds": 1,
+      "seeds": [
+        0
+      ],
+      "n_images": 200,
+      "n_gt": 1400,
+      "trained": true,
+      "map50": {
+        "n": 1,
+        "mean": 0.6566855837712531,
+        "std": null,
+        "ci": null
+      },
+      "map50_95": {
+        "n": 1,
+        "mean": 0.43164124666533965,
+        "std": null,
+        "ci": null
+      },
+      "precision": {
+        "n": 1,
+        "mean": 0.9012219959266803,
+        "std": null,
+        "ci": null
+      },
+      "recall": {
+        "n": 1,
+        "mean": 0.6321428571428571,
+        "std": null,
+        "ci": null
+      },
+      "ap_small": {
+        "n": 1,
+        "mean": 0.027649499539887813,
+        "std": null,
+        "ci": null
+      },
+      "ap_medium": {
+        "n": 1,
+        "mean": 0.2288960848538637,
+        "std": null,
+        "ci": null
+      },
+      "ap_large": {
+        "n": 1,
+        "mean": 0.600204636945136,
+        "std": null,
+        "ci": null
+      },
+      "recall_dark": {
+        "n": 1,
+        "mean": 0.7473233404710921,
+        "std": null,
+        "ci": null
+      },
+      "recall_medium": {
+        "n": 1,
+        "mean": 0.6201716738197425,
+        "std": null,
+        "ci": null
+      },
+      "recall_bright": {
+        "n": 1,
+        "mean": 0.5289079229122056,
+        "std": null,
+        "ci": null
+      },
+      "nsr": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb": {
+        "n": 1,
+        "mean": 2.533852025530721e-10,
+        "std": null,
+        "ci": null
+      },
+      "nsr_final": {
+        "n": 1,
+        "mean": 0.003725884822686112,
+        "std": null,
+        "ci": null
+      },
+      "brb_final": {
+        "n": 1,
+        "mean": 0.0032069479800688316,
+        "std": null,
+        "ci": null
+      }
+    },
+    {
+      "variant": "b4_global_gate",
+      "label": "B4 \u00b7 Global per-image gate",
+      "dataset": "dawn",
+      "subset": "sand",
+      "n_seeds": 1,
+      "seeds": [
+        0
+      ],
+      "n_images": 323,
+      "n_gt": 2039,
+      "trained": true,
+      "map50": {
+        "n": 1,
+        "mean": 0.5797200981455869,
+        "std": null,
+        "ci": null
+      },
+      "map50_95": {
+        "n": 1,
+        "mean": 0.3822300624396638,
+        "std": null,
+        "ci": null
+      },
+      "precision": {
+        "n": 1,
+        "mean": 0.9401061410159212,
+        "std": null,
+        "ci": null
+      },
+      "recall": {
+        "n": 1,
+        "mean": 0.6081412457086808,
+        "std": null,
+        "ci": null
+      },
+      "ap_small": {
+        "n": 1,
+        "mean": 0.0938570907627096,
+        "std": null,
+        "ci": null
+      },
+      "ap_medium": {
+        "n": 1,
+        "mean": 0.2903973441021194,
+        "std": null,
+        "ci": null
+      },
+      "ap_large": {
+        "n": 1,
+        "mean": 0.5946801405300783,
+        "std": null,
+        "ci": null
+      },
+      "recall_dark": {
+        "n": 1,
+        "mean": 0.7382352941176471,
+        "std": null,
+        "ci": null
+      },
+      "recall_medium": {
+        "n": 1,
+        "mean": 0.6082474226804123,
+        "std": null,
+        "ci": null
+      },
+      "recall_bright": {
+        "n": 1,
+        "mean": 0.47794117647058826,
+        "std": null,
+        "ci": null
+      },
+      "nsr": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb": {
+        "n": 1,
+        "mean": 3.450299361048708e-13,
+        "std": null,
+        "ci": null
+      },
+      "nsr_final": {
+        "n": 1,
+        "mean": 0.004611167982053562,
+        "std": null,
+        "ci": null
+      },
+      "brb_final": {
+        "n": 1,
+        "mean": 0.0019850352987618755,
+        "std": null,
+        "ci": null
+      }
+    },
+    {
+      "variant": "b4_global_gate",
+      "label": "B4 \u00b7 Global per-image gate",
+      "dataset": "dawn",
+      "subset": "snow",
+      "n_seeds": 1,
+      "seeds": [
+        0
+      ],
+      "n_images": 204,
+      "n_gt": 1963,
+      "trained": true,
+      "map50": {
+        "n": 1,
+        "mean": 0.8112530547160037,
+        "std": null,
+        "ci": null
+      },
+      "map50_95": {
+        "n": 1,
+        "mean": 0.48083000213801713,
+        "std": null,
+        "ci": null
+      },
+      "precision": {
+        "n": 1,
+        "mean": 0.8992568125516103,
+        "std": null,
+        "ci": null
+      },
+      "recall": {
+        "n": 1,
+        "mean": 0.5547631176770249,
+        "std": null,
+        "ci": null
+      },
+      "ap_small": {
+        "n": 1,
+        "mean": 0.06886732258760972,
+        "std": null,
+        "ci": null
+      },
+      "ap_medium": {
+        "n": 1,
+        "mean": 0.28660547402460235,
+        "std": null,
+        "ci": null
+      },
+      "ap_large": {
+        "n": 1,
+        "mean": 0.5875356467132031,
+        "std": null,
+        "ci": null
+      },
+      "recall_dark": {
+        "n": 1,
+        "mean": 0.616793893129771,
+        "std": null,
+        "ci": null
+      },
+      "recall_medium": {
+        "n": 1,
+        "mean": 0.5886850152905199,
+        "std": null,
+        "ci": null
+      },
+      "recall_bright": {
+        "n": 1,
+        "mean": 0.45871559633027525,
+        "std": null,
+        "ci": null
+      },
+      "nsr": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb": {
+        "n": 1,
+        "mean": 3.89389298382736e-11,
+        "std": null,
+        "ci": null
+      },
+      "nsr_final": {
+        "n": 1,
+        "mean": 0.016502157161439487,
+        "std": null,
+        "ci": null
+      },
+      "brb_final": {
+        "n": 1,
+        "mean": 0.005439909865340358,
+        "std": null,
+        "ci": null
+      }
+    },
+    {
+      "variant": "b5_fixed_gate",
+      "label": "B5 \u00b7 Fixed hand-designed gate",
+      "dataset": "dawn",
+      "subset": "all",
+      "n_seeds": 1,
+      "seeds": [
+        0
+      ],
+      "n_images": 1027,
+      "n_gt": 7199,
+      "trained": true,
+      "map50": {
+        "n": 1,
+        "mean": 0.5842604234868117,
+        "std": null,
+        "ci": null
+      },
+      "map50_95": {
+        "n": 1,
+        "mean": 0.36815542341740337,
+        "std": null,
+        "ci": null
+      },
+      "precision": {
+        "n": 1,
+        "mean": 0.9186225049352928,
+        "std": null,
+        "ci": null
+      },
+      "recall": {
+        "n": 1,
+        "mean": 0.5817474649256841,
+        "std": null,
+        "ci": null
+      },
+      "ap_small": {
+        "n": 1,
+        "mean": 0.05296309931538422,
+        "std": null,
+        "ci": null
+      },
+      "ap_medium": {
+        "n": 1,
+        "mean": 0.313363446755052,
+        "std": null,
+        "ci": null
+      },
+      "ap_large": {
+        "n": 1,
+        "mean": 0.5699507498000868,
+        "std": null,
+        "ci": null
+      },
+      "recall_dark": {
+        "n": 1,
+        "mean": 0.6925,
+        "std": null,
+        "ci": null
+      },
+      "recall_medium": {
+        "n": 1,
+        "mean": 0.5814922884535223,
+        "std": null,
+        "ci": null
+      },
+      "recall_bright": {
+        "n": 1,
+        "mean": 0.47125,
+        "std": null,
+        "ci": null
+      },
+      "nsr": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb": {
+        "n": 1,
+        "mean": 2.392878889915393e-10,
+        "std": null,
+        "ci": null
+      },
+      "nsr_final": {
+        "n": 1,
+        "mean": 4.371176228294789e-06,
+        "std": null,
+        "ci": null
+      },
+      "brb_final": {
+        "n": 1,
+        "mean": 2.040353138192239e-06,
+        "std": null,
+        "ci": null
+      }
+    },
+    {
+      "variant": "b5_fixed_gate",
+      "label": "B5 \u00b7 Fixed hand-designed gate",
+      "dataset": "dawn",
+      "subset": "fog",
+      "n_seeds": 1,
+      "seeds": [
+        0
+      ],
+      "n_images": 300,
+      "n_gt": 1797,
+      "trained": true,
+      "map50": {
+        "n": 1,
+        "mean": 0.6169049647505301,
+        "std": null,
+        "ci": null
+      },
+      "map50_95": {
+        "n": 1,
+        "mean": 0.38155765299067107,
+        "std": null,
+        "ci": null
+      },
+      "precision": {
+        "n": 1,
+        "mean": 0.9186351706036745,
+        "std": null,
+        "ci": null
+      },
+      "recall": {
+        "n": 1,
+        "mean": 0.5843071786310517,
+        "std": null,
+        "ci": null
+      },
+      "ap_small": {
+        "n": 1,
+        "mean": 0.06763319220320754,
+        "std": null,
+        "ci": null
+      },
+      "ap_medium": {
+        "n": 1,
+        "mean": 0.3634749421588973,
+        "std": null,
+        "ci": null
+      },
+      "ap_large": {
+        "n": 1,
+        "mean": 0.6170260249139586,
+        "std": null,
+        "ci": null
+      },
+      "recall_dark": {
+        "n": 1,
+        "mean": 0.676126878130217,
+        "std": null,
+        "ci": null
+      },
+      "recall_medium": {
+        "n": 1,
+        "mean": 0.5926544240400667,
+        "std": null,
+        "ci": null
+      },
+      "recall_bright": {
+        "n": 1,
+        "mean": 0.48414023372287146,
+        "std": null,
+        "ci": null
+      },
+      "nsr": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb": {
+        "n": 1,
+        "mean": 2.870734334630622e-10,
+        "std": null,
+        "ci": null
+      },
+      "nsr_final": {
+        "n": 1,
+        "mean": 4.982461556816512e-07,
+        "std": null,
+        "ci": null
+      },
+      "brb_final": {
+        "n": 1,
+        "mean": 7.769746625150917e-07,
+        "std": null,
+        "ci": null
+      }
+    },
+    {
+      "variant": "b5_fixed_gate",
+      "label": "B5 \u00b7 Fixed hand-designed gate",
+      "dataset": "dawn",
+      "subset": "rain",
+      "n_seeds": 1,
+      "seeds": [
+        0
+      ],
+      "n_images": 200,
+      "n_gt": 1400,
+      "trained": true,
+      "map50": {
+        "n": 1,
+        "mean": 0.6941563502031554,
+        "std": null,
+        "ci": null
+      },
+      "map50_95": {
+        "n": 1,
+        "mean": 0.4688258958350785,
+        "std": null,
+        "ci": null
+      },
+      "precision": {
+        "n": 1,
+        "mean": 0.9009287925696594,
+        "std": null,
+        "ci": null
+      },
+      "recall": {
+        "n": 1,
+        "mean": 0.6235714285714286,
+        "std": null,
+        "ci": null
+      },
+      "ap_small": {
+        "n": 1,
+        "mean": 0.02738362712050929,
+        "std": null,
+        "ci": null
+      },
+      "ap_medium": {
+        "n": 1,
+        "mean": 0.3672060073605334,
+        "std": null,
+        "ci": null
+      },
+      "ap_large": {
+        "n": 1,
+        "mean": 0.6236314859440504,
+        "std": null,
+        "ci": null
+      },
+      "recall_dark": {
+        "n": 1,
+        "mean": 0.7473233404710921,
+        "std": null,
+        "ci": null
+      },
+      "recall_medium": {
+        "n": 1,
+        "mean": 0.6072961373390557,
+        "std": null,
+        "ci": null
+      },
+      "recall_bright": {
+        "n": 1,
+        "mean": 0.5160599571734475,
+        "std": null,
+        "ci": null
+      },
+      "nsr": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb": {
+        "n": 1,
+        "mean": 1.9771967559209034e-10,
+        "std": null,
+        "ci": null
+      },
+      "nsr_final": {
+        "n": 1,
+        "mean": 1.2530891212918505e-05,
+        "std": null,
+        "ci": null
+      },
+      "brb_final": {
+        "n": 1,
+        "mean": 3.3965006479734343e-06,
+        "std": null,
+        "ci": null
+      }
+    },
+    {
+      "variant": "b5_fixed_gate",
+      "label": "B5 \u00b7 Fixed hand-designed gate",
+      "dataset": "dawn",
+      "subset": "sand",
+      "n_seeds": 1,
+      "seeds": [
+        0
+      ],
+      "n_images": 323,
+      "n_gt": 2039,
+      "trained": true,
+      "map50": {
+        "n": 1,
+        "mean": 0.5674453826675616,
+        "std": null,
+        "ci": null
+      },
+      "map50_95": {
+        "n": 1,
+        "mean": 0.3741383689166734,
+        "std": null,
+        "ci": null
+      },
+      "precision": {
+        "n": 1,
+        "mean": 0.9381283836040216,
+        "std": null,
+        "ci": null
+      },
+      "recall": {
+        "n": 1,
+        "mean": 0.5948994605198626,
+        "std": null,
+        "ci": null
+      },
+      "ap_small": {
+        "n": 1,
+        "mean": 0.09094281296330213,
+        "std": null,
+        "ci": null
+      },
+      "ap_medium": {
+        "n": 1,
+        "mean": 0.2867053543866426,
+        "std": null,
+        "ci": null
+      },
+      "ap_large": {
+        "n": 1,
+        "mean": 0.5860383049169678,
+        "std": null,
+        "ci": null
+      },
+      "recall_dark": {
+        "n": 1,
+        "mean": 0.7338235294117647,
+        "std": null,
+        "ci": null
+      },
+      "recall_medium": {
+        "n": 1,
+        "mean": 0.5994108983799705,
+        "std": null,
+        "ci": null
+      },
+      "recall_bright": {
+        "n": 1,
+        "mean": 0.4514705882352941,
+        "std": null,
+        "ci": null
+      },
+      "nsr": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb": {
+        "n": 1,
+        "mean": 1.9493767613819717e-10,
+        "std": null,
+        "ci": null
+      },
+      "nsr_final": {
+        "n": 1,
+        "mean": 1.0026625731322718e-06,
+        "std": null,
+        "ci": null
+      },
+      "brb_final": {
+        "n": 1,
+        "mean": 8.235752427247936e-07,
+        "std": null,
+        "ci": null
+      }
+    },
+    {
+      "variant": "b5_fixed_gate",
+      "label": "B5 \u00b7 Fixed hand-designed gate",
+      "dataset": "dawn",
+      "subset": "snow",
+      "n_seeds": 1,
+      "seeds": [
+        0
+      ],
+      "n_images": 204,
+      "n_gt": 1963,
+      "trained": true,
+      "map50": {
+        "n": 1,
+        "mean": 0.801740999721676,
+        "std": null,
+        "ci": null
+      },
+      "map50_95": {
+        "n": 1,
+        "mean": 0.4737989839384955,
+        "std": null,
+        "ci": null
+      },
+      "precision": {
+        "n": 1,
+        "mean": 0.9116117850953206,
+        "std": null,
+        "ci": null
+      },
+      "recall": {
+        "n": 1,
+        "mean": 0.5359144167091187,
+        "std": null,
+        "ci": null
+      },
+      "ap_small": {
+        "n": 1,
+        "mean": 0.06564682602257496,
+        "std": null,
+        "ci": null
+      },
+      "ap_medium": {
+        "n": 1,
+        "mean": 0.31923484718003503,
+        "std": null,
+        "ci": null
+      },
+      "ap_large": {
+        "n": 1,
+        "mean": 0.5690725058649654,
+        "std": null,
+        "ci": null
+      },
+      "recall_dark": {
+        "n": 1,
+        "mean": 0.6,
+        "std": null,
+        "ci": null
+      },
+      "recall_medium": {
+        "n": 1,
+        "mean": 0.581039755351682,
+        "std": null,
+        "ci": null
+      },
+      "recall_bright": {
+        "n": 1,
+        "mean": 0.42660550458715596,
+        "std": null,
+        "ci": null
+      },
+      "nsr": {
+        "n": 1,
+        "mean": 0.0,
+        "std": null,
+        "ci": null
+      },
+      "brb": {
+        "n": 1,
+        "mean": 2.7998935021733564e-10,
+        "std": null,
+        "ci": null
+      },
+      "nsr_final": {
+        "n": 1,
+        "mean": 7.400421010043276e-06,
+        "std": null,
+        "ci": null
+      },
+      "brb_final": {
+        "n": 1,
+        "mean": 4.495271280265227e-06,
+        "std": null,
+        "ci": null
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "seeds": [
+        0
+      ],
+      "n_pairs": 1,
+      "diff": {
+        "n": 1,
+        "mean": 0.03333002288150966,
+        "std": null,
+        "ci": null
+      },
+      "wilcoxon_p": null,
+      "note": "only 1 paired seed(s); the paper's protocol uses 8. With n < 6 a two-sided Wilcoxon test cannot reach p < 0.05; treat as inconclusive.",
+      "variant": "b0_no_filter",
+      "reference": "b2_erup",
+      "dataset": "dawn",
+      "subset": "all",
+      "metric": "map50"
+    },
+    {
+      "seeds": [
+        0
+      ],
+      "n_pairs": 1,
+      "diff": {
+        "n": 1,
+        "mean": 0.037027505707812325,
+        "std": null,
+        "ci": null
+      },
+      "wilcoxon_p": null,
+      "note": "only 1 paired seed(s); the paper's protocol uses 8. With n < 6 a two-sided Wilcoxon test cannot reach p < 0.05; treat as inconclusive.",
+      "variant": "b0_no_filter",
+      "reference": "b2_erup",
+      "dataset": "dawn",
+      "subset": "fog",
+      "metric": "map50"
+    },
+    {
+      "seeds": [
+        0
+      ],
+      "n_pairs": 1,
+      "diff": {
+        "n": 1,
+        "mean": 0.049882880988889045,
+        "std": null,
+        "ci": null
+      },
+      "wilcoxon_p": null,
+      "note": "only 1 paired seed(s); the paper's protocol uses 8. With n < 6 a two-sided Wilcoxon test cannot reach p < 0.05; treat as inconclusive.",
+      "variant": "b0_no_filter",
+      "reference": "b2_erup",
+      "dataset": "dawn",
+      "subset": "rain",
+      "metric": "map50"
+    },
+    {
+      "seeds": [
+        0
+      ],
+      "n_pairs": 1,
+      "diff": {
+        "n": 1,
+        "mean": 0.02546663634754942,
+        "std": null,
+        "ci": null
+      },
+      "wilcoxon_p": null,
+      "note": "only 1 paired seed(s); the paper's protocol uses 8. With n < 6 a two-sided Wilcoxon test cannot reach p < 0.05; treat as inconclusive.",
+      "variant": "b0_no_filter",
+      "reference": "b2_erup",
+      "dataset": "dawn",
+      "subset": "sand",
+      "metric": "map50"
+    },
+    {
+      "seeds": [
+        0
+      ],
+      "n_pairs": 1,
+      "diff": {
+        "n": 1,
+        "mean": 0.03334808147559798,
+        "std": null,
+        "ci": null
+      },
+      "wilcoxon_p": null,
+      "note": "only 1 paired seed(s); the paper's protocol uses 8. With n < 6 a two-sided Wilcoxon test cannot reach p < 0.05; treat as inconclusive.",
+      "variant": "b0_no_filter",
+      "reference": "b2_erup",
+      "dataset": "dawn",
+      "subset": "snow",
+      "metric": "map50"
+    },
+    {
+      "seeds": [
+        0
+      ],
+      "n_pairs": 1,
+      "diff": {
+        "n": 1,
+        "mean": -0.012302907243953554,
+        "std": null,
+        "ci": null
+      },
+      "wilcoxon_p": null,
+      "note": "only 1 paired seed(s); the paper's protocol uses 8. With n < 6 a two-sided Wilcoxon test cannot reach p < 0.05; treat as inconclusive.",
+      "variant": "b3_kbl_only",
+      "reference": "b2_erup",
+      "dataset": "dawn",
+      "subset": "all",
+      "metric": "map50"
+    },
+    {
+      "seeds": [
+        0
+      ],
+      "n_pairs": 1,
+      "diff": {
+        "n": 1,
+        "mean": 0.00816289570920048,
+        "std": null,
+        "ci": null
+      },
+      "wilcoxon_p": null,
+      "note": "only 1 paired seed(s); the paper's protocol uses 8. With n < 6 a two-sided Wilcoxon test cannot reach p < 0.05; treat as inconclusive.",
+      "variant": "b3_kbl_only",
+      "reference": "b2_erup",
+      "dataset": "dawn",
+      "subset": "fog",
+      "metric": "map50"
+    },
+    {
+      "seeds": [
+        0
+      ],
+      "n_pairs": 1,
+      "diff": {
+        "n": 1,
+        "mean": 0.03332628216722322,
+        "std": null,
+        "ci": null
+      },
+      "wilcoxon_p": null,
+      "note": "only 1 paired seed(s); the paper's protocol uses 8. With n < 6 a two-sided Wilcoxon test cannot reach p < 0.05; treat as inconclusive.",
+      "variant": "b3_kbl_only",
+      "reference": "b2_erup",
+      "dataset": "dawn",
+      "subset": "rain",
+      "metric": "map50"
+    },
+    {
+      "seeds": [
+        0
+      ],
+      "n_pairs": 1,
+      "diff": {
+        "n": 1,
+        "mean": -0.029316553523729083,
+        "std": null,
+        "ci": null
+      },
+      "wilcoxon_p": null,
+      "note": "only 1 paired seed(s); the paper's protocol uses 8. With n < 6 a two-sided Wilcoxon test cannot reach p < 0.05; treat as inconclusive.",
+      "variant": "b3_kbl_only",
+      "reference": "b2_erup",
+      "dataset": "dawn",
+      "subset": "sand",
+      "metric": "map50"
+    },
+    {
+      "seeds": [
+        0
+      ],
+      "n_pairs": 1,
+      "diff": {
+        "n": 1,
+        "mean": -0.0021038266155768426,
+        "std": null,
+        "ci": null
+      },
+      "wilcoxon_p": null,
+      "note": "only 1 paired seed(s); the paper's protocol uses 8. With n < 6 a two-sided Wilcoxon test cannot reach p < 0.05; treat as inconclusive.",
+      "variant": "b3_kbl_only",
+      "reference": "b2_erup",
+      "dataset": "dawn",
+      "subset": "snow",
+      "metric": "map50"
+    },
+    {
+      "seeds": [
+        0
+      ],
+      "n_pairs": 1,
+      "diff": {
+        "n": 1,
+        "mean": 0.01373545773124285,
+        "std": null,
+        "ci": null
+      },
+      "wilcoxon_p": null,
+      "note": "only 1 paired seed(s); the paper's protocol uses 8. With n < 6 a two-sided Wilcoxon test cannot reach p < 0.05; treat as inconclusive.",
+      "variant": "b4_global_gate",
+      "reference": "b2_erup",
+      "dataset": "dawn",
+      "subset": "all",
+      "metric": "map50"
+    },
+    {
+      "seeds": [
+        0
+      ],
+      "n_pairs": 1,
+      "diff": {
+        "n": 1,
+        "mean": 0.008983667110351812,
+        "std": null,
+        "ci": null
+      },
+      "wilcoxon_p": null,
+      "note": "only 1 paired seed(s); the paper's protocol uses 8. With n < 6 a two-sided Wilcoxon test cannot reach p < 0.05; treat as inconclusive.",
+      "variant": "b4_global_gate",
+      "reference": "b2_erup",
+      "dataset": "dawn",
+      "subset": "fog",
+      "metric": "map50"
+    },
+    {
+      "seeds": [
+        0
+      ],
+      "n_pairs": 1,
+      "diff": {
+        "n": 1,
+        "mean": 0.04618940276539829,
+        "std": null,
+        "ci": null
+      },
+      "wilcoxon_p": null,
+      "note": "only 1 paired seed(s); the paper's protocol uses 8. With n < 6 a two-sided Wilcoxon test cannot reach p < 0.05; treat as inconclusive.",
+      "variant": "b4_global_gate",
+      "reference": "b2_erup",
+      "dataset": "dawn",
+      "subset": "rain",
+      "metric": "map50"
+    },
+    {
+      "seeds": [
+        0
+      ],
+      "n_pairs": 1,
+      "diff": {
+        "n": 1,
+        "mean": 0.018997105119120894,
+        "std": null,
+        "ci": null
+      },
+      "wilcoxon_p": null,
+      "note": "only 1 paired seed(s); the paper's protocol uses 8. With n < 6 a two-sided Wilcoxon test cannot reach p < 0.05; treat as inconclusive.",
+      "variant": "b4_global_gate",
+      "reference": "b2_erup",
+      "dataset": "dawn",
+      "subset": "sand",
+      "metric": "map50"
+    },
+    {
+      "seeds": [
+        0
+      ],
+      "n_pairs": 1,
+      "diff": {
+        "n": 1,
+        "mean": 0.018061334883049174,
+        "std": null,
+        "ci": null
+      },
+      "wilcoxon_p": null,
+      "note": "only 1 paired seed(s); the paper's protocol uses 8. With n < 6 a two-sided Wilcoxon test cannot reach p < 0.05; treat as inconclusive.",
+      "variant": "b4_global_gate",
+      "reference": "b2_erup",
+      "dataset": "dawn",
+      "subset": "snow",
+      "metric": "map50"
+    },
+    {
+      "seeds": [
+        0
+      ],
+      "n_pairs": 1,
+      "diff": {
+        "n": 1,
+        "mean": 0.014188785078803612,
+        "std": null,
+        "ci": null
+      },
+      "wilcoxon_p": null,
+      "note": "only 1 paired seed(s); the paper's protocol uses 8. With n < 6 a two-sided Wilcoxon test cannot reach p < 0.05; treat as inconclusive.",
+      "variant": "b5_fixed_gate",
+      "reference": "b2_erup",
+      "dataset": "dawn",
+      "subset": "all",
+      "metric": "map50"
+    },
+    {
+      "seeds": [
+        0
+      ],
+      "n_pairs": 1,
+      "diff": {
+        "n": 1,
+        "mean": 0.019450148695228875,
+        "std": null,
+        "ci": null
+      },
+      "wilcoxon_p": null,
+      "note": "only 1 paired seed(s); the paper's protocol uses 8. With n < 6 a two-sided Wilcoxon test cannot reach p < 0.05; treat as inconclusive.",
+      "variant": "b5_fixed_gate",
+      "reference": "b2_erup",
+      "dataset": "dawn",
+      "subset": "fog",
+      "metric": "map50"
+    },
+    {
+      "seeds": [
+        0
+      ],
+      "n_pairs": 1,
+      "diff": {
+        "n": 1,
+        "mean": 0.08366016919730057,
+        "std": null,
+        "ci": null
+      },
+      "wilcoxon_p": null,
+      "note": "only 1 paired seed(s); the paper's protocol uses 8. With n < 6 a two-sided Wilcoxon test cannot reach p < 0.05; treat as inconclusive.",
+      "variant": "b5_fixed_gate",
+      "reference": "b2_erup",
+      "dataset": "dawn",
+      "subset": "rain",
+      "metric": "map50"
+    },
+    {
+      "seeds": [
+        0
+      ],
+      "n_pairs": 1,
+      "diff": {
+        "n": 1,
+        "mean": 0.006722389641095616,
+        "std": null,
+        "ci": null
+      },
+      "wilcoxon_p": null,
+      "note": "only 1 paired seed(s); the paper's protocol uses 8. With n < 6 a two-sided Wilcoxon test cannot reach p < 0.05; treat as inconclusive.",
+      "variant": "b5_fixed_gate",
+      "reference": "b2_erup",
+      "dataset": "dawn",
+      "subset": "sand",
+      "metric": "map50"
+    },
+    {
+      "seeds": [
+        0
+      ],
+      "n_pairs": 1,
+      "diff": {
+        "n": 1,
+        "mean": 0.00854927988872145,
+        "std": null,
+        "ci": null
+      },
+      "wilcoxon_p": null,
+      "note": "only 1 paired seed(s); the paper's protocol uses 8. With n < 6 a two-sided Wilcoxon test cannot reach p < 0.05; treat as inconclusive.",
+      "variant": "b5_fixed_gate",
+      "reference": "b2_erup",
+      "dataset": "dawn",
+      "subset": "snow",
+      "metric": "map50"
+    }
+  ],
+  "holm_confirmatory": {},
+  "variants_evaluated": [
+    "b0_no_filter",
+    "b2_erup",
+    "b3_kbl_only",
+    "b4_global_gate",
+    "b5_fixed_gate"
+  ],
+  "datasets": [
+    "dawn"
+  ],
+  "seeds": [
+    0
+  ],
+  "generated_at": "2026-10-22T03:56:52",
+  "config_file": "configs/short_real.yaml"
+}

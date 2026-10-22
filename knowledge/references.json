@@ -1,0 +1,166 @@
+[
+ {
+  "id": 1,
+  "text": "C. Michaelis, B. Mitzkus, R. Geirhos, E. Rusak, O. Bringmann, A. S. Ecker, M. Bethge, and W. Brendel, “Benchmarking robustness in object detection: Autonomous driving when winter is coming,” arXiv:1907.07484, 2019."
+ },
+ {
+  "id": 2,
+  "text": "D. Hendrycks and T. Dietterich, “Benchmarking neural network robustness to common corruptions and perturbations,” in Proc. Int. Conf. Learn. Represent. (ICLR), 2019."
+ },
+ {
+  "id": 3,
+  "text": "Y. Chen, W. Li, C. Sakaridis, D. Dai, and L. Van Gool, “Domain adaptive Faster R-CNN for object detection in the wild,” in Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR), 2018, pp. 3339–3348."
+ },
+ {
+  "id": 4,
+  "text": "A. Wu and C. Deng, “Single-domain generalized object detection in urban scene via cyclic-disentangled self-distillation,” in Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR), 2022, pp. 847–856. PREPRINT – RESEARCH PROPOSAL, NOT PEER REVIEWED 10"
+ },
+ {
+  "id": 5,
+  "text": "V. Vidit, M. Engilberge, and M. Salzmann, “CLIP the gap: A single domain generalization approach for object detection,” in Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR), 2023, pp. 3219–3229."
+ },
+ {
+  "id": 6,
+  "text": "W. Liu, G. Ren, R. Yu, S. Guo, J. Zhu, and L. Zhang, “Image-adaptive YOLO for object detection in adverse weather conditions,” in Proc. AAAI Conf. Artif. Intell., vol. 36, no. 2, 2022, pp. 1792–1800."
+ },
+ {
+  "id": 7,
+  "text": "S. Kalwar, D. Patel, A. Aanegola, K. R. Konda, S. Garg, and K. M. Krishna, “GDIP: Gated differentiable image processing for object detection in adverse conditions,” in Proc. IEEE Int. Conf. Robot. Autom. (ICRA), 2023, pp. 7083–7089."
+ },
+ {
+  "id": 8,
+  "text": "Y. Ogino, Y. Shoji, T. Toizumi, and A. Ito, “ERUP-YOLO: Enhancing object detection robustness for adverse weather condition by unified image-adaptive processing,” in Proc. IEEE/CVF Winter Conf. Appl. Comput. Vis. (WACV), 2025, pp. 8586–8594, arXiv:2411.02799."
+ },
+ {
+  "id": 9,
+  "text": "M. Everingham, L. Van Gool, C. K. I. Williams, J. Winn, and A. Zisserman, “The PASCAL visual object classes (VOC) challenge,” Int. J. Comput. Vis., vol. 88, no. 2, pp. 303–338, 2010."
+ },
+ {
+  "id": 10,
+  "text": "B. Li, W. Ren, D. Fu, D. Tao, D. Feng, W. Zeng, and Z. Wang, “Benchmarking single-image dehazing and beyond,” IEEE Trans. Image Process., vol. 28, no. 1, pp. 492–505, 2019."
+ },
+ {
+  "id": 11,
+  "text": "Y. P. Loh and C. S. Chan, “Getting to know low-light images with the Exclusively Dark dataset,” Comput. Vis. Image Underst., vol. 178, pp. 30–42, 2019."
+ },
+ {
+  "id": 12,
+  "text": "M. A. Kenk and M. Hassaballah, “DAWN: Vehicle detection in adverse weather nature dataset,” arXiv:2008.05402, 2020."
+ },
+ {
+  "id": 13,
+  "text": "C. Guo, C. Li, J. Guo, C. C. Loy, J. Hou, S. Kwong, and R. Cong, “Zeroreference deep curve estimation for low-light image enhancement,” in Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR), 2020."
+ },
+ {
+  "id": 14,
+  "text": "S. Moran, P. Marza, S. McDonagh, S. Parisot, and G. Slabaugh, “DeepLPF: Deep local parametric filters for image enhancement,” in Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR), 2020."
+ },
+ {
+  "id": 15,
+  "text": "M. Gharbi, J. Chen, J. T. Barron, S. W. Hasinoff, and F. Durand, “Deep bilateral learning for real-time image enhancement,” ACM Trans. Graph., vol. 36, no. 4, pp. 1–12, 2017."
+ },
+ {
+  "id": 16,
+  "text": "M. Afifi, K. G. Derpanis, B. Ommer, and M. S. Brown, “Learning multiscale photo exposure correction,” in Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR), 2021, pp. 9157–9167."
+ },
+ {
+  "id": 17,
+  "text": "Z. Cui, K. Li, L. Gu, S. Su, P. Gao, Z. Jiang, Y. Qiao, and T. Harada, “You only need 90K parameters to adapt light: A light weight transformer for image enhancement and exposure correction,” in Proc. British Mach. Vis. Conf. (BMVC), 2022, arXiv:2205.14871."
+ },
+ {
+  "id": 18,
+  "text": "K. A. Hashmi, G. Kallempudi, D. Stricker, and M. Z. Afzal, “FeatEnHancer: Enhancing hierarchical features for object detection and beyond under low-light vision,” in Proc. IEEE/CVF Int. Conf. Comput. Vis. (ICCV), 2023, pp. 6725–6735."
+ },
+ {
+  "id": 19,
+  "text": "M. Hong, S. Cheng, H. Huang, H. Fan, and S. Liu, “You only look around: Learning illumination-invariant feature for low-light object detection,” in Adv. Neural Inf. Process. Syst. (NeurIPS), 2024."
+ },
+ {
+  "id": 20,
+  "text": "W. Cao, P. Yang, and W. Lyu, “Explicit illumination modeling for object detection in low-light environments,” Electronics, vol. 15, no. 10, p. 2057, 2026."
+ },
+ {
+  "id": 21,
+  "text": "S. Park, J. Kuai, H. Kim, H. Ko, C. Jung, and Y. Son, “A lightweight degradation-aware framework for robust object detection in adverse weather,” Electronics, vol. 15, no. 1, p. 146, 2026."
+ },
+ {
+  "id": 22,
+  "text": "A. Kariri and K. Elleithy, “AEA-YOLO: Adaptive enhancement algorithm for challenging environment object detection,” AI, vol. 6, no. 7, p. 132, 2025."
+ },
+ {
+  "id": 23,
+  "text": "H. Zeng, J. Cai, L. Li, Z. Cao, and L. Zhang, “Learning image-adaptive 3D lookup tables for high performance photo enhancement in real-time,” IEEE Trans. Pattern Anal. Mach. Intell., 2020, early access."
+ },
+ {
+  "id": 24,
+  "text": "C. Yang, M. Jin, X. Jia, Y. Xu, and Y. Chen, “AdaInt: Learning adaptive intervals for 3D lookup tables on real-time image enhancement,” in Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR), 2022, pp. 17 501–17 510."
+ },
+ {
+  "id": 25,
+  "text": "S. G. Narasimhan and S. K. Nayar, “Vision and the atmosphere,” Int. J. Comput. Vis., vol. 48, no. 3, pp. 233–254, 2002."
+ },
+ {
+  "id": 26,
+  "text": "K. He, J. Sun, and X. Tang, “Single image haze removal using dark channel prior,” in Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), 2009, pp. 1956–1963."
+ },
+ {
+  "id": 27,
+  "text": "Z. Cui, G.-J. Qi, L. Gu, S. You, Z. Zhang, and T. Harada, “Multitask AET with orthogonal tangent regularity for dark object detection,” in Proc. IEEE/CVF Int. Conf. Comput. Vis. (ICCV), 2021, pp. 2553–2562."
+ },
+ {
+  "id": 28,
+  "text": "X. Yin, Z. Yu, Z. Fei, W. Lv, and X. Gao, “PE-YOLO: Pyramid enhancement network for dark object detection,” arXiv:2307.10953, 2023."
+ },
+ {
+  "id": 29,
+  "text": "Y. Wang, X. Yan, K. Zhang, L. Gong, H. Xie, F. L. Wang, and M. Wei, “TogetherNet: Bridging image restoration and object detection together via dynamic enhancement learning,” Comput. Graph. Forum, vol. 41, no. 7, pp. 465–476, 2022."
+ },
+ {
+  "id": 30,
+  "text": "F. Yu, H. Chen, X. Wang, W. Xian, Y. Chen, F. Liu, V. Madhavan, and T. Darrell, “BDD100K: A diverse driving dataset for heterogeneous multitask learning,” in Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR), 2020, pp. 2636–2645."
+ },
+ {
+  "id": 31,
+  "text": "C. Sakaridis, D. Dai, and L. Van Gool, “ACDC: The adverse conditions dataset with correspondences for semantic driving scene understanding,” in Proc. IEEE/CVF Int. Conf. Comput. Vis. (ICCV), 2021, pp. 10 765– 10 775."
+ },
+ {
+  "id": 32,
+  "text": "——, “Semantic foggy scene understanding with synthetic data,” Int. J. Comput. Vis., vol. 126, no. 9, pp. 973–992, 2018."
+ },
+ {
+  "id": 33,
+  "text": "M. Bijelic, T. Gruber, F. Mannan, F. Kraus, W. Ritter, K. Dietmayer, and F. Heide, “Seeing through fog without seeing fog: Deep multimodal sensor fusion in unseen adverse weather,” in Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR), 2020."
+ },
+ {
+  "id": 34,
+  "text": "D. Bolya, S. Foley, J. Hays, and J. Hoffman, “TIDE: A general toolbox for identifying object detection errors,” in Proc. Eur. Conf. Comput. Vis. (ECCV), 2020."
+ },
+ {
+  "id": 35,
+  "text": "C. Guo, G. Pleiss, Y. Sun, and K. Q. Weinberger, “On calibration of modern neural networks,” in Proc. Int. Conf. Mach. Learn. (ICML), ser. PMLR, vol. 70, 2017, pp. 1321–1330."
+ },
+ {
+  "id": 36,
+  "text": "F. Küppers, J. Kronenberger, A. Shantia, and A. Haselhoff, “Multivariate confidence calibration for object detection,” in Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. Workshops (CVPRW), 2020, pp. 1322– 1330."
+ },
+ {
+  "id": 37,
+  "text": "A. Kendall and Y. Gal, “What uncertainties do we need in Bayesian deep learning for computer vision?” in Adv. Neural Inf. Process. Syst. (NeurIPS), vol. 30, 2017."
+ },
+ {
+  "id": 38,
+  "text": "X. Bouthillier, P. Delaunay, M. Bronzi, A. Trofimov, B. Nichyporuk, J. Szeto, N. Mohammadi Sepahvand, E. Raff, K. Madan, V. Voleti, S. Ebrahimi Kahou, V. Michalski, T. Arbel, C. Pal, G. Varoquaux, and P. Vincent, “Accounting for variance in machine learning benchmarks,” in Proc. Mach. Learn. Syst. (MLSys), vol. 3, 2021, pp. 747–769."
+ },
+ {
+  "id": 39,
+  "text": "J. Redmon, “YOLO: Real-time object detection (darknet project page, performance table),” https://pjreddie.com/darknet/yolo/, accessed Oct. 2026."
+ },
+ {
+  "id": 40,
+  "text": "T.-Y. Lin, M. Maire, S. J. Belongie, J. Hays, P. Perona, D. Ramanan, P. Dollár, and C. L. Zitnick, “Microsoft COCO: Common objects in context,” in Proc. Eur. Conf. Comput. Vis. (ECCV), 2014, pp. 740–755."
+ },
+ {
+  "id": 41,
+  "text": "K. He, J. Sun, and X. Tang, “Guided image filtering,” IEEE Trans. Pattern Anal. Mach. Intell., vol. 35, no. 6, pp. 1397–1409, 2013."
+ }
+]

@@ -1,0 +1,16 @@
+{
+  "state": "done",
+  "variant": "b5_fixed_gate",
+  "seed": 0,
+  "name": "short_real",
+  "updated": "2026-10-22T03:52:36",
+  "epoch": 2,
+  "epochs": 3,
+  "step": 280,
+  "steps": 300,
+  "progress": 1.0,
+  "loss": 2.0092933177948,
+  "eta_s": 7,
+  "best_val_map50": 0.833954328374304,
+  "train_seconds": 378.3
+}

@@ -1,0 +1,76 @@
+{
+  "dawn": {
+    "status": "ok",
+    "n_valid_samples": 1027,
+    "n_protocol_boxes": 7199,
+    "n_missing_annotations": 0,
+    "n_issues": 0,
+    "root": "C:\\Users\\shiva\\OneDrive\\Desktop\\DAWN\\data\\DAWN"
+  },
+  "voc_trainval": {
+    "status": "ok",
+    "n_valid_samples": 16551,
+    "n_protocol_boxes": 19461,
+    "n_missing_annotations": 0,
+    "n_issues": 0,
+    "root": "C:\\Users\\shiva\\OneDrive\\Desktop\\DAWN\\data\\VOC\\VOCdevkit"
+  },
+  "voc_test": {
+    "status": "ok",
+    "n_valid_samples": 4952,
+    "n_protocol_boxes": 6604,
+    "n_missing_annotations": 0,
+    "n_issues": 0,
+    "root": "C:\\Users\\shiva\\OneDrive\\Desktop\\DAWN\\data\\VOC\\VOCdevkit"
+  },
+  "rtts": {
+    "status": "missing",
+    "n_valid_samples": null,
+    "n_protocol_boxes": null,
+    "n_missing_annotations": null,
+    "n_issues": null,
+    "root": "C:\\Users\\shiva\\OneDrive\\Desktop\\DAWN\\data\\RTTS"
+  },
+  "exdark": {
+    "status": "missing",
+    "n_valid_samples": null,
+    "n_protocol_boxes": null,
+    "n_missing_annotations": null,
+    "n_issues": null,
+    "root": "C:\\Users\\shiva\\OneDrive\\Desktop\\DAWN\\data\\ExDark"
+  },
+  "bdd100k": {
+    "status": "missing",
+    "n_valid_samples": null,
+    "n_protocol_boxes": null,
+    "n_missing_annotations": null,
+    "n_issues": null,
+    "root": "C:\\Users\\shiva\\OneDrive\\Desktop\\DAWN\\data\\BDD100K"
+  },
+  "acdc": {
+    "status": "missing",
+    "n_valid_samples": null,
+    "n_protocol_boxes": null,
+    "n_missing_annotations": null,
+    "n_issues": null,
+    "root": "C:\\Users\\shiva\\OneDrive\\Desktop\\DAWN\\data\\ACDC"
+  },
+  "foggy_cityscapes": {
+    "status": "missing",
+    "n_valid_samples": null,
+    "n_protocol_boxes": null,
+    "n_missing_annotations": null,
+    "n_issues": null,
+    "root": "C:\\Users\\shiva\\OneDrive\\Desktop\\DAWN\\data\\FoggyCityscapes"
+  },
+  "_leakage_check": {
+    "disjoint": true,
+    "overlaps": {},
+    "sizes": {
+      "voc_trainval": 16551,
+      "voc_test": 4952,
+      "dawn": 1027
+    },
+    "by_content": false
+  }
+}

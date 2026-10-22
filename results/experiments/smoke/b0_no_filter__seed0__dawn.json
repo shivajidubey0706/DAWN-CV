@@ -1,0 +1,187 @@
+{
+  "status": "evaluated",
+  "dataset": "dawn",
+  "dataset_title": "DAWN (Detection in Adverse Weather Nature)",
+  "split": null,
+  "variant": "b0_no_filter",
+  "variant_label": "B0 \u00b7 YOLOv3 + BPW aug, no filter",
+  "seed": 0,
+  "run_name": "smoke",
+  "checkpoint": "runs\\smoke\\b0_no_filter\\seed0\\best.pt",
+  "trained": false,
+  "epoch": 0,
+  "val": null,
+  "settings": {
+    "imgsz": 448,
+    "conf_eval": 0.001,
+    "conf_pr": 0.25,
+    "iou_nms": 0.6,
+    "classes": [
+      "person",
+      "bicycle",
+      "car",
+      "bus",
+      "motorbike"
+    ],
+    "limit": 40,
+    "detector": "weights/yolov3u.pt",
+    "frontend": {
+      "enabled": false,
+      "use_bpw": true,
+      "use_kbl": true,
+      "gate_mode": "one",
+      "gate_grid": null,
+      "gate_kbl": false,
+      "b0": 2.0,
+      "use_gate_features": true,
+      "use_gate_cues": true,
+      "n_intervals": 8,
+      "encoder_input": 256,
+      "kbl_kernel_scale": 1.0,
+      "cue_radius": 7,
+      "tau_hi": 0.95,
+      "tau_b": 0.6,
+      "s": 0.05
+    }
+  },
+  "overall": {
+    "n_images": 40,
+    "classes": [
+      "person",
+      "bicycle",
+      "car",
+      "bus",
+      "motorbike"
+    ],
+    "n_gt": 216,
+    "map50": 0.732443189728625,
+    "map50_95": 0.49128124476202634,
+    "map_by_iou": {
+      "0.5": 0.7318826581598394,
+      "0.55": 0.7159450743643063,
+      "0.6": 0.7086826524232341,
+      "0.65": 0.6937871346693816,
+      "0.7": 0.6252076330945948,
+      "0.75": 0.4814477882457515,
+      "0.8": 0.3623318068540382,
+      "0.85": 0.29571145099269636,
+      "0.9": 0.24532211305041746,
+      "0.95": 0.052494135766003286
+    },
+    "precision": 0.9285714285714286,
+    "recall": 0.6620370370370371,
+    "conf_pr": 0.25,
+    "tp": 143,
+    "fp": 11,
+    "per_class": {
+      "person": {
+        "ap50": 0.7800925925925923,
+        "n_gt": 12,
+        "ap_coco": 0.452857428600003,
+        "ap50_coco101": 0.7783278327832786
+      },
+      "bicycle": {
+        "ap50": null,
+        "n_gt": 0,
+        "ap_coco": null,
+        "ap50_coco101": null
+      },
+      "car": {
+        "ap50": 0.7603944520361934,
+        "n_gt": 191,
+        "ap_coco": 0.5462656645452263,
+        "ap50_coco101": 0.7574064773666873
+      },
+      "bus": {
+        "ap50": 0.5892857142857143,
+        "n_gt": 8,
+        "ap_coco": 0.524087694483734,
+        "ap50_coco101": 0.5898161244695898
+      },
+      "motorbike": {
+        "ap50": 0.8,
+        "n_gt": 5,
+        "ap_coco": 0.4419141914191419,
+        "ap50_coco101": 0.801980198019802
+      }
+    },
+    "sizes": {
+      "small": {
+        "ap": 0.2432657323703385,
+        "ap50": 0.3569697549465092,
+        "n_gt": 11
+      },
+      "medium": {
+        "ap": 0.468950166634632,
+        "ap50": 0.7706739259766511,
+        "n_gt": 92
+      },
+      "large": {
+        "ap": 0.6173788625649623,
+        "ap50": 0.8713815136197723,
+        "n_gt": 113
+      }
+    },
+    "brightness_recall": {
+      "thresholds": [
+        0.506084422270457,
+        0.601806620756785
+      ],
+      "dark": {
+        "recall": 0.625,
+        "n_gt": 72
+      },
+      "medium": {
+        "recall": 0.7222222222222222,
+        "n_gt": 72
+      },
+      "bright": {
+        "recall": 0.6388888888888888,
+        "n_gt": 72
+      }
+    },
+    "conventions": {
+      "map50": "VOC all-point interpolation, IoU 0.5",
+      "map50_95": "COCO-style 101-point, IoU 0.50:0.05:0.95, box areas, own implementation",
+      "sizes": "COCO area thresholds 32^2, 96^2 at original resolution",
+      "precision_recall": "score >= 0.25, IoU 0.5, pooled over classes"
+    },
+    "mechanism": {
+      "nsr": 0.0,
+      "brb": 0.0,
+      "nsr_final": 0.0,
+      "brb_final": 0.0,
+      "gate_mean": 1.0,
+      "definition": "NSR/BRB on I~ (Eq. 13-14); *_final on I^. Mean over images, at detector input resolution."
+    }
+  },
+  "by_weather": {},
+  "frontend_params": 0,
+  "detector_params": 103754144,
+  "eval_seconds": 6.8,
+  "environment": {
+    "time": "2026-10-22T03:12:44",
+    "python": "3.14.8",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.2",
+    "cuda_available": true,
+    "cuda": "12.8",
+    "cudnn": 91900,
+    "ultralytics": "8.4.183",
+    "gpu": "NVIDIA GeForce RTX 2050",
+    "gpu_memory_gb": 4.0,
+    "cpu": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel"
+  },
+  "evaluated_at": "2026-10-22T03:12:44",
+  "train_status": {
+    "state": "done",
+    "variant": "b0_no_filter",
+    "seed": 0,
+    "name": "smoke",
+    "updated": "2026-10-22T03:12:35",
+    "note": "no trainable parameters (frozen detector, no front end)",
+    "progress": 1.0
+  },
+  "train_history_epochs": 0
+}

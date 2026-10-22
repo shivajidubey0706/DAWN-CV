@@ -1,0 +1,22 @@
+{
+  "name": "rtts",
+  "title": "RTTS (RESIDE real-world task-driven testing set)",
+  "format": "voc_flat",
+  "root": "C:\\Users\\shiva\\OneDrive\\Desktop\\DAWN\\data\\RTTS",
+  "role": "test",
+  "url": "https://sites.google.com/view/reside-dehaze-datasets",
+  "notes": "Manual download (Google Drive / Baidu links on the RESIDE page).",
+  "class_set": [
+    "person",
+    "bicycle",
+    "car",
+    "bus",
+    "motorbike"
+  ],
+  "available": false,
+  "scanned_at": "2026-10-22T03:11:38",
+  "verify_images": false,
+  "split": null,
+  "status": "missing",
+  "message": "Dataset root not found: C:\\Users\\shiva\\OneDrive\\Desktop\\DAWN\\data\\RTTS. Download manually from https://sites.google.com/view/reside-dehaze-datasets and set the path."
+}

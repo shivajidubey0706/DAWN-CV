@@ -1,0 +1,73 @@
+{
+  "name": "short_real",
+  "variant": "sg_gate",
+  "detector_weights": "weights/yolov3u.pt",
+  "train_dataset": "voc",
+  "protocol_classes": [
+    "person",
+    "bicycle",
+    "car",
+    "bus",
+    "motorbike"
+  ],
+  "eval_datasets": [
+    "dawn"
+  ],
+  "seeds": [
+    0,
+    1
+  ],
+  "conf_eval": 0.001,
+  "conf_pr": 0.25,
+  "iou_nms": 0.6,
+  "output_dir": "runs",
+  "frontend": {
+    "enabled": true,
+    "use_bpw": true,
+    "use_kbl": true,
+    "gate_mode": "learned",
+    "gate_grid": null,
+    "gate_kbl": false,
+    "b0": 2.0,
+    "use_gate_features": true,
+    "use_gate_cues": true,
+    "n_intervals": 8,
+    "encoder_input": 256,
+    "kbl_kernel_scale": 1.0,
+    "cue_radius": 7,
+    "tau_hi": 0.95,
+    "tau_b": 0.6,
+    "s": 0.05
+  },
+  "loss": {
+    "lambda_s": 0.0,
+    "lambda_tv": 0.1,
+    "eta": 1.0,
+    "sat_on": "blended"
+  },
+  "aug": {
+    "p_bpw": 0.5,
+    "bpw_strength": 1.0,
+    "p_sha": 0.0,
+    "sha_scatter_prob": 0.0,
+    "hflip": 0.5
+  },
+  "train": {
+    "epochs": 3,
+    "batch_size": 4,
+    "imgsz": 448,
+    "lr0": 0.001,
+    "lr_min": 1e-06,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "seed": 0,
+    "amp": true,
+    "freeze_detector": true,
+    "max_train_images": 1200,
+    "max_val_images": 200,
+    "val_fraction": 0.1,
+    "num_workers": 0,
+    "deterministic": false,
+    "log_every": 20
+  }
+}

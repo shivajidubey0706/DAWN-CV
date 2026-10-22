@@ -1,0 +1,16 @@
+{
+  "state": "done",
+  "variant": "b4_global_gate",
+  "seed": 0,
+  "name": "short_real",
+  "updated": "2026-10-22T03:43:55",
+  "epoch": 2,
+  "epochs": 3,
+  "step": 280,
+  "steps": 300,
+  "progress": 1.0,
+  "loss": 1.9876759052276611,
+  "eta_s": 8,
+  "best_val_map50": 0.8512140120516367,
+  "train_seconds": 409.8
+}

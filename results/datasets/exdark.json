@@ -1,0 +1,27 @@
+{
+  "name": "exdark",
+  "title": "ExDark (Exclusively Dark)",
+  "format": "exdark",
+  "root": "C:\\Users\\shiva\\OneDrive\\Desktop\\DAWN\\data\\ExDark",
+  "role": "test",
+  "url": "https://github.com/cs-chan/Exclusively-Dark-Image-Dataset",
+  "notes": "Manual download from the GitHub page.",
+  "class_set": [
+    "bicycle",
+    "boat",
+    "bottle",
+    "bus",
+    "car",
+    "cat",
+    "chair",
+    "dog",
+    "motorbike",
+    "person"
+  ],
+  "available": false,
+  "scanned_at": "2026-10-22T03:11:38",
+  "verify_images": false,
+  "split": null,
+  "status": "missing",
+  "message": "Dataset root not found: C:\\Users\\shiva\\OneDrive\\Desktop\\DAWN\\data\\ExDark. Download manually from https://github.com/cs-chan/Exclusively-Dark-Image-Dataset and set the path."
+}

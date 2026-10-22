@@ -1,0 +1,16 @@
+{
+  "state": "done",
+  "variant": "b3_kbl_only",
+  "seed": 0,
+  "name": "short_real",
+  "updated": "2026-10-22T03:34:38",
+  "epoch": 2,
+  "epochs": 3,
+  "step": 280,
+  "steps": 300,
+  "progress": 1.0,
+  "loss": 1.9707098007202148,
+  "eta_s": 7,
+  "best_val_map50": 0.8489806564129049,
+  "train_seconds": 364.2
+}

@@ -1,0 +1,684 @@
+{
+  "status": "evaluated",
+  "dataset": "dawn",
+  "dataset_title": "DAWN (Detection in Adverse Weather Nature)",
+  "split": null,
+  "variant": "b3_kbl_only",
+  "variant_label": "B3 \u00b7 ERUP KBL-only",
+  "seed": 0,
+  "run_name": "short_real",
+  "checkpoint": "runs\\short_real\\b3_kbl_only\\seed0\\best.pt",
+  "trained": true,
+  "epoch": 0,
+  "val": {
+    "loss": 3.3990635278820993,
+    "map50": 0.8489806564129049,
+    "map50_95": 0.6549478868633696,
+    "n_images": 200
+  },
+  "settings": {
+    "imgsz": 448,
+    "conf_eval": 0.001,
+    "conf_pr": 0.25,
+    "iou_nms": 0.6,
+    "classes": [
+      "person",
+      "bicycle",
+      "car",
+      "bus",
+      "motorbike"
+    ],
+    "limit": null,
+    "detector": "weights/yolov3u.pt",
+    "frontend": {
+      "enabled": true,
+      "use_bpw": false,
+      "use_kbl": true,
+      "gate_mode": "one",
+      "gate_grid": null,
+      "gate_kbl": false,
+      "b0": 2.0,
+      "use_gate_features": true,
+      "use_gate_cues": true,
+      "n_intervals": 8,
+      "encoder_input": 256,
+      "kbl_kernel_scale": 1.0,
+      "cue_radius": 7,
+      "tau_hi": 0.95,
+      "tau_b": 0.6,
+      "s": 0.05
+    }
+  },
+  "overall": {
+    "n_images": 1027,
+    "classes": [
+      "person",
+      "bicycle",
+      "car",
+      "bus",
+      "motorbike"
+    ],
+    "n_gt": 7199,
+    "map50": 0.5577687311640546,
+    "map50_95": 0.36432073796116965,
+    "map_by_iou": {
+      "0.5": 0.5564120533406838,
+      "0.55": 0.5466495173568531,
+      "0.6": 0.5303988307028094,
+      "0.65": 0.4989250805415789,
+      "0.7": 0.4509035648946429,
+      "0.75": 0.39805702582452607,
+      "0.8": 0.3082848279799403,
+      "0.85": 0.21169528812758273,
+      "0.9": 0.11799549653263189,
+      "0.95": 0.02388569431044777
+    },
+    "precision": 0.9282439248051353,
+    "recall": 0.5624392276705098,
+    "conf_pr": 0.25,
+    "tp": 4049,
+    "fp": 313,
+    "per_class": {
+      "person": {
+        "ap50": 0.7169523080616644,
+        "n_gt": 477,
+        "ap_coco": 0.4414014399711787,
+        "ap50_coco101": 0.7144459583990892
+      },
+      "bicycle": {
+        "ap50": 0.2688186813186813,
+        "n_gt": 26,
+        "ap_coco": 0.1673488962087603,
+        "ap50_coco101": 0.2681400282885431
+      },
+      "car": {
+        "ap50": 0.7382168095170679,
+        "n_gt": 6454,
+        "ap_coco": 0.4879082144832484,
+        "ap50_coco101": 0.7350348936549284
+      },
+      "bus": {
+        "ap50": 0.5064065347186737,
+        "n_gt": 161,
+        "ap_coco": 0.3839527249294774,
+        "ap50_coco101": 0.5069605590908797
+      },
+      "motorbike": {
+        "ap50": 0.5584493222041855,
+        "n_gt": 81,
+        "ap_coco": 0.3409924142131834,
+        "ap50_coco101": 0.5574788272699782
+      }
+    },
+    "sizes": {
+      "small": {
+        "ap": 0.05262576783713927,
+        "ap50": 0.1297684300688881,
+        "n_gt": 941
+      },
+      "medium": {
+        "ap": 0.2996616396421662,
+        "ap50": 0.5163682012418388,
+        "n_gt": 3460
+      },
+      "large": {
+        "ap": 0.5793965326921465,
+        "ap50": 0.8112140927402184,
+        "n_gt": 2798
+      }
+    },
+    "brightness_recall": {
+      "thresholds": [
+        0.47022366523742676,
+        0.6012688477834066
+      ],
+      "dark": {
+        "recall": 0.68625,
+        "n_gt": 2400
+      },
+      "medium": {
+        "recall": 0.5739891621508962,
+        "n_gt": 2399
+      },
+      "bright": {
+        "recall": 0.4270833333333333,
+        "n_gt": 2400
+      }
+    },
+    "conventions": {
+      "map50": "VOC all-point interpolation, IoU 0.5",
+      "map50_95": "COCO-style 101-point, IoU 0.50:0.05:0.95, box areas, own implementation",
+      "sizes": "COCO area thresholds 32^2, 96^2 at original resolution",
+      "precision_recall": "score >= 0.25, IoU 0.5, pooled over classes"
+    },
+    "map50_bootstrap": {
+      "n": 200,
+      "ci95": [
+        0.5074596676649523,
+        0.624898119219965
+      ],
+      "std": 0.028753724537945398
+    },
+    "mechanism": {
+      "nsr": 0.0,
+      "brb": 0.0,
+      "nsr_final": 0.00014261386790115943,
+      "brb_final": 0.0010463399225094396,
+      "gate_mean": 0.0,
+      "definition": "NSR/BRB on I~ (Eq. 13-14); *_final on I^. Mean over images, at detector input resolution."
+    }
+  },
+  "by_weather": {
+    "fog": {
+      "n_images": 300,
+      "classes": [
+        "person",
+        "bicycle",
+        "car",
+        "bus",
+        "motorbike"
+      ],
+      "n_gt": 1797,
+      "map50": 0.6056177117645017,
+      "map50_95": 0.39126758820764806,
+      "map_by_iou": {
+        "0.5": 0.6046476973918505,
+        "0.55": 0.5975706087375062,
+        "0.6": 0.5826645002644029,
+        "0.65": 0.5452278586333944,
+        "0.7": 0.49203498583890115,
+        "0.75": 0.4043146417832708,
+        "0.8": 0.31202882611652927,
+        "0.85": 0.22156703566713548,
+        "0.9": 0.12698011050643232,
+        "0.95": 0.02563961713705696
+      },
+      "precision": 0.930379746835443,
+      "recall": 0.5726210350584308,
+      "conf_pr": 0.25,
+      "tp": 1029,
+      "fp": 77,
+      "per_class": {
+        "person": {
+          "ap50": 0.7312370213302838,
+          "n_gt": 117,
+          "ap_coco": 0.47412338887182576,
+          "ap50_coco101": 0.7292737076965404
+        },
+        "bicycle": {
+          "ap50": 0.24866071428571426,
+          "n_gt": 16,
+          "ap_coco": 0.14803151743745802,
+          "ap50_coco101": 0.25417256011315414
+        },
+        "car": {
+          "ap50": 0.7574690090387315,
+          "n_gt": 1570,
+          "ap_coco": 0.4965909022502276,
+          "ap50_coco101": 0.7548546884647368
+        },
+        "bus": {
+          "ap50": 0.5116213526476576,
+          "n_gt": 71,
+          "ap_coco": 0.38581232641351554,
+          "ap50_coco101": 0.5092552621054368
+        },
+        "motorbike": {
+          "ap50": 0.7791004615201212,
+          "n_gt": 23,
+          "ap_coco": 0.45177980606521295,
+          "ap50_coco101": 0.7756822685793845
+        }
+      },
+      "sizes": {
+        "small": {
+          "ap": 0.07534130189272675,
+          "ap50": 0.1706676115740437,
+          "n_gt": 286
+        },
+        "medium": {
+          "ap": 0.36796336657292245,
+          "ap50": 0.6266604844514505,
+          "n_gt": 882
+        },
+        "large": {
+          "ap": 0.6439108788263344,
+          "ap50": 0.8953582314585466,
+          "n_gt": 629
+        }
+      },
+      "brightness_recall": {
+        "thresholds": [
+          0.4652291039625804,
+          0.588408092657725
+        ],
+        "dark": {
+          "recall": 0.6811352253756261,
+          "n_gt": 599
+        },
+        "medium": {
+          "recall": 0.6026711185308848,
+          "n_gt": 599
+        },
+        "bright": {
+          "recall": 0.4340567612687813,
+          "n_gt": 599
+        }
+      },
+      "conventions": {
+        "map50": "VOC all-point interpolation, IoU 0.5",
+        "map50_95": "COCO-style 101-point, IoU 0.50:0.05:0.95, box areas, own implementation",
+        "sizes": "COCO area thresholds 32^2, 96^2 at original resolution",
+        "precision_recall": "score >= 0.25, IoU 0.5, pooled over classes"
+      },
+      "map50_bootstrap": {
+        "n": 200,
+        "ci95": [
+          0.528835880347285,
+          0.6919426682612213
+        ],
+        "std": 0.04263598355363929
+      },
+      "mechanism": {
+        "nsr": 0.0,
+        "brb": 0.0,
+        "nsr_final": 6.140053525693172e-05,
+        "brb_final": 0.0007083916346775254,
+        "gate_mean": 0.0,
+        "definition": "NSR/BRB on I~ (Eq. 13-14); *_final on I^. Mean over images, at detector input resolution."
+      }
+    },
+    "rain": {
+      "n_images": 200,
+      "classes": [
+        "person",
+        "bicycle",
+        "car",
+        "bus",
+        "motorbike"
+      ],
+      "n_gt": 1400,
+      "map50": 0.643822463173078,
+      "map50_95": 0.42952427183679587,
+      "map_by_iou": {
+        "0.5": 0.6443204085440847,
+        "0.55": 0.6371297142548377,
+        "0.6": 0.6056830766927226,
+        "0.65": 0.5924351877681846,
+        "0.7": 0.5571305952314919,
+        "0.75": 0.5218344180634383,
+        "0.8": 0.37124207512534735,
+        "0.85": 0.22358682575303945,
+        "0.9": 0.10506463046617365,
+        "0.95": 0.0368157864686385
+      },
+      "precision": 0.9242590559824369,
+      "recall": 0.6014285714285714,
+      "conf_pr": 0.25,
+      "tp": 842,
+      "fp": 69,
+      "per_class": {
+        "person": {
+          "ap50": 0.8190955116403531,
+          "n_gt": 28,
+          "ap_coco": 0.5186664088847848,
+          "ap50_coco101": 0.8177802861684048
+        },
+        "bicycle": {
+          "ap50": null,
+          "n_gt": 0,
+          "ap_coco": null,
+          "ap50_coco101": null
+        },
+        "car": {
+          "ap50": 0.7549733398309579,
+          "n_gt": 1355,
+          "ap_coco": 0.48662394077538307,
+          "ap50_coco101": 0.7521934743634264
+        },
+        "bus": {
+          "ap50": 0.5012210012210012,
+          "n_gt": 13,
+          "ap_coco": 0.39696515352859996,
+          "ap50_coco101": 0.5023573785950024
+        },
+        "motorbike": {
+          "ap50": 0.5,
+          "n_gt": 4,
+          "ap_coco": 0.31584158415841584,
+          "ap50_coco101": 0.504950495049505
+        }
+      },
+      "sizes": {
+        "small": {
+          "ap": 0.02629259476710344,
+          "ap50": 0.09365991137548299,
+          "n_gt": 109
+        },
+        "medium": {
+          "ap": 0.20555914901671196,
+          "ap50": 0.3794472879106423,
+          "n_gt": 730
+        },
+        "large": {
+          "ap": 0.6136401105072464,
+          "ap50": 0.8700436507109525,
+          "n_gt": 561
+        }
+      },
+      "brightness_recall": {
+        "thresholds": [
+          0.4430580139160156,
+          0.5856167475382488
+        ],
+        "dark": {
+          "recall": 0.7473233404710921,
+          "n_gt": 467
+        },
+        "medium": {
+          "recall": 0.5965665236051502,
+          "n_gt": 466
+        },
+        "bright": {
+          "recall": 0.4603854389721627,
+          "n_gt": 467
+        }
+      },
+      "conventions": {
+        "map50": "VOC all-point interpolation, IoU 0.5",
+        "map50_95": "COCO-style 101-point, IoU 0.50:0.05:0.95, box areas, own implementation",
+        "sizes": "COCO area thresholds 32^2, 96^2 at original resolution",
+        "precision_recall": "score >= 0.25, IoU 0.5, pooled over classes"
+      },
+      "map50_bootstrap": {
+        "n": 200,
+        "ci95": [
+          0.5017220651563553,
+          0.7867403469791691
+        ],
+        "std": 0.07072865908759542
+      },
+      "mechanism": {
+        "nsr": 0.0,
+        "brb": 0.0,
+        "nsr_final": 0.00019115214077601196,
+        "brb_final": 0.00125899266722854,
+        "gate_mean": 0.0,
+        "definition": "NSR/BRB on I~ (Eq. 13-14); *_final on I^. Mean over images, at detector input resolution."
+      }
+    },
+    "sand": {
+      "n_images": 323,
+      "classes": [
+        "person",
+        "bicycle",
+        "car",
+        "bus",
+        "motorbike"
+      ],
+      "n_gt": 2039,
+      "map50": 0.5314064395027369,
+      "map50_95": 0.36064879438272873,
+      "map_by_iou": {
+        "0.5": 0.5314013803582094,
+        "0.55": 0.5177779929617494,
+        "0.6": 0.49947360621959536,
+        "0.65": 0.46616091143452965,
+        "0.7": 0.4365187106367934,
+        "0.75": 0.4040181071882408,
+        "0.8": 0.31983544451676865,
+        "0.85": 0.24742194143028057,
+        "0.9": 0.14799982147190782,
+        "0.95": 0.03588002760921187
+      },
+      "precision": 0.9359079704190633,
+      "recall": 0.5586071603727317,
+      "conf_pr": 0.25,
+      "tp": 1139,
+      "fp": 78,
+      "per_class": {
+        "person": {
+          "ap50": 0.6961765873632739,
+          "n_gt": 174,
+          "ap_coco": 0.409080068001339,
+          "ap50_coco101": 0.6937837409101807
+        },
+        "bicycle": {
+          "ap50": 0.2222222222222222,
+          "n_gt": 9,
+          "ap_coco": 0.18415841584158418,
+          "ap50_coco101": 0.22772277227722773
+        },
+        "car": {
+          "ap50": 0.7402490222900573,
+          "n_gt": 1748,
+          "ap_coco": 0.5071128128303701,
+          "ap50_coco101": 0.7390723188524105
+        },
+        "bus": {
+          "ap50": 0.5238585030434558,
+          "n_gt": 55,
+          "ap_coco": 0.40058452369577024,
+          "ap50_coco101": 0.5226301728316068
+        },
+        "motorbike": {
+          "ap50": 0.47452586259467505,
+          "n_gt": 53,
+          "ap_coco": 0.30230815154457985,
+          "ap50_coco101": 0.4737978969196209
+        }
+      },
+      "sizes": {
+        "small": {
+          "ap": 0.07888357227628695,
+          "ap50": 0.19099909552432576,
+          "n_gt": 400
+        },
+        "medium": {
+          "ap": 0.2627353311365054,
+          "ap50": 0.4456594894355588,
+          "n_gt": 955
+        },
+        "large": {
+          "ap": 0.5907618571957161,
+          "ap50": 0.773002825814065,
+          "n_gt": 684
+        }
+      },
+      "brightness_recall": {
+        "thresholds": [
+          0.45410317182540894,
+          0.5894622008005778
+        ],
+        "dark": {
+          "recall": 0.711764705882353,
+          "n_gt": 680
+        },
+        "medium": {
+          "recall": 0.5714285714285714,
+          "n_gt": 679
+        },
+        "bright": {
+          "recall": 0.3926470588235294,
+          "n_gt": 680
+        }
+      },
+      "conventions": {
+        "map50": "VOC all-point interpolation, IoU 0.5",
+        "map50_95": "COCO-style 101-point, IoU 0.50:0.05:0.95, box areas, own implementation",
+        "sizes": "COCO area thresholds 32^2, 96^2 at original resolution",
+        "precision_recall": "score >= 0.25, IoU 0.5, pooled over classes"
+      },
+      "map50_bootstrap": {
+        "n": 200,
+        "ci95": [
+          0.46677004711725933,
+          0.6028877499469583
+        ],
+        "std": 0.036800907236160606
+      },
+      "mechanism": {
+        "nsr": 0.0,
+        "brb": 0.0,
+        "nsr_final": 5.5238994369664465e-05,
+        "brb_final": 0.0007999046939413374,
+        "gate_mean": 0.0,
+        "definition": "NSR/BRB on I~ (Eq. 13-14); *_final on I^. Mean over images, at detector input resolution."
+      }
+    },
+    "snow": {
+      "n_images": 204,
+      "classes": [
+        "person",
+        "bicycle",
+        "car",
+        "bus",
+        "motorbike"
+      ],
+      "n_gt": 1963,
+      "map50": 0.7910878932173777,
+      "map50_95": 0.48118149315151226,
+      "map_by_iou": {
+        "0.5": 0.7901749098341909,
+        "0.55": 0.7819110792269172,
+        "0.6": 0.7706967410576155,
+        "0.65": 0.7551297684096715,
+        "0.7": 0.5264042416428149,
+        "0.75": 0.48699408083637463,
+        "0.8": 0.44270304568876445,
+        "0.85": 0.16428431830346588,
+        "0.9": 0.08260481684164864,
+        "0.95": 0.010911929673658746
+      },
+      "precision": 0.9210992907801419,
+      "recall": 0.5292919001528273,
+      "conf_pr": 0.25,
+      "tp": 1039,
+      "fp": 89,
+      "per_class": {
+        "person": {
+          "ap50": 0.7324321830880901,
+          "n_gt": 158,
+          "ap_coco": 0.4596625810255709,
+          "ap50_coco101": 0.7298375229356268
+        },
+        "bicycle": {
+          "ap50": 1.0,
+          "n_gt": 1,
+          "ap_coco": 0.4,
+          "ap50_coco101": 1.0
+        },
+        "car": {
+          "ap50": 0.7077841965190277,
+          "n_gt": 1781,
+          "ap_coco": 0.464488899139648,
+          "ap50_coco101": 0.705098079399468
+        },
+        "bus": {
+          "ap50": 0.515223086479771,
+          "n_gt": 22,
+          "ap_coco": 0.38175598559234236,
+          "ap50_coco101": 0.5159389468358601
+        },
+        "motorbike": {
+          "ap50": 1.0,
+          "n_gt": 1,
+          "ap_coco": 0.7,
+          "ap50_coco101": 1.0
+        }
+      },
+      "sizes": {
+        "small": {
+          "ap": 0.08343575658316006,
+          "ap50": 0.22246430939255896,
+          "n_gt": 146
+        },
+        "medium": {
+          "ap": 0.2504175857553429,
+          "ap50": 0.4423074467659891,
+          "n_gt": 893
+        },
+        "large": {
+          "ap": 0.5891452805500584,
+          "ap50": 0.9045548716437191,
+          "n_gt": 924
+        }
+      },
+      "brightness_recall": {
+        "thresholds": [
+          0.5071664452552795,
+          0.6383315324783326
+        ],
+        "dark": {
+          "recall": 0.6,
+          "n_gt": 655
+        },
+        "medium": {
+          "recall": 0.5856269113149847,
+          "n_gt": 654
+        },
+        "bright": {
+          "recall": 0.40214067278287463,
+          "n_gt": 654
+        }
+      },
+      "conventions": {
+        "map50": "VOC all-point interpolation, IoU 0.5",
+        "map50_95": "COCO-style 101-point, IoU 0.50:0.05:0.95, box areas, own implementation",
+        "sizes": "COCO area thresholds 32^2, 96^2 at original resolution",
+        "precision_recall": "score >= 0.25, IoU 0.5, pooled over classes"
+      },
+      "map50_bootstrap": {
+        "n": 200,
+        "ci95": [
+          0.6393190484004818,
+          0.8287274109446444
+        ],
+        "std": 0.050819362497010884
+      },
+      "mechanism": {
+        "nsr": 0.0,
+        "brb": 0.0,
+        "nsr_final": 0.0003528022471608197,
+        "brb_final": 0.001725028727574396,
+        "gate_mean": 0.0,
+        "definition": "NSR/BRB on I~ (Eq. 13-14); *_final on I^. Mean over images, at detector input resolution."
+      }
+    }
+  },
+  "frontend_params": 6781042,
+  "detector_params": 103754144,
+  "eval_seconds": 101.5,
+  "environment": {
+    "time": "2026-10-22T03:36:49",
+    "python": "3.14.8",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.2",
+    "cuda_available": true,
+    "cuda": "12.8",
+    "cudnn": 91900,
+    "ultralytics": "8.4.183",
+    "gpu": "NVIDIA GeForce RTX 2050",
+    "gpu_memory_gb": 4.0,
+    "cpu": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel"
+  },
+  "evaluated_at": "2026-10-22T03:36:49",
+  "train_status": {
+    "state": "done",
+    "variant": "b3_kbl_only",
+    "seed": 0,
+    "name": "short_real",
+    "updated": "2026-10-22T03:34:38",
+    "epoch": 2,
+    "epochs": 3,
+    "step": 280,
+    "steps": 300,
+    "progress": 1.0,
+    "loss": 1.9707098007202148,
+    "eta_s": 7,
+    "best_val_map50": 0.8489806564129049,
+    "train_seconds": 364.2
+  },
+  "train_history_epochs": 3
+}

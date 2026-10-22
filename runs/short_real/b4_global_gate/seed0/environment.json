@@ -1,0 +1,15 @@
+{
+  "time": "2026-10-22T03:36:49",
+  "python": "3.14.8",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "torch": "2.11.0+cu128",
+  "numpy": "2.5.2",
+  "cuda_available": true,
+  "cuda": "12.8",
+  "cudnn": 91900,
+  "ultralytics": "8.4.183",
+  "gpu": "NVIDIA GeForce RTX 2050",
+  "gpu_memory_gb": 4.0,
+  "cpu": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+  "deterministic": false
+}

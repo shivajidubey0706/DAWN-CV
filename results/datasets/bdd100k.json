@@ -1,0 +1,22 @@
+{
+  "name": "bdd100k",
+  "title": "BDD100K (weather-tagged validation images)",
+  "format": "bdd",
+  "root": "C:\\Users\\shiva\\OneDrive\\Desktop\\DAWN\\data\\BDD100K",
+  "role": "test",
+  "url": "https://bdd-data.berkeley.edu/",
+  "notes": "Requires registration; download manually.",
+  "class_set": [
+    "person",
+    "bicycle",
+    "car",
+    "bus",
+    "motorbike"
+  ],
+  "available": false,
+  "scanned_at": "2026-10-22T03:11:38",
+  "verify_images": false,
+  "split": null,
+  "status": "missing",
+  "message": "Dataset root not found: C:\\Users\\shiva\\OneDrive\\Desktop\\DAWN\\data\\BDD100K. Download manually from https://bdd-data.berkeley.edu/ and set the path."
+}

@@ -1,0 +1,13 @@
+# Smoke test: verifies the full train -> validate -> checkpoint -> evaluate path in a few minutes.
+# Results from this config are NOT research results.
+name: smoke
+seeds: [0]
+eval_datasets: [dawn]
+ablation_variants: [b0_no_filter, b2_erup, sg_full]
+train:
+  epochs: 2
+  batch_size: 4
+  max_train_images: 64
+  max_val_images: 16
+  lr0: 1.0e-3
+  log_every: 4

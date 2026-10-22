@@ -1,0 +1,77 @@
+{
+  "name": "voc",
+  "title": "PASCAL VOC 2007 + 2012",
+  "format": "voc",
+  "root": "C:\\Users\\shiva\\OneDrive\\Desktop\\DAWN\\data\\VOC\\VOCdevkit",
+  "role": "train",
+  "url": "http://host.robots.ox.ac.uk/pascal/VOC/",
+  "notes": "Train on 2007+2012 trainval (minus a fixed 10% validation split); test on 2007 test.",
+  "class_set": [
+    "person",
+    "bicycle",
+    "car",
+    "bus",
+    "motorbike"
+  ],
+  "available": true,
+  "scanned_at": "2026-10-22T03:11:32",
+  "verify_images": false,
+  "split": "test",
+  "status": "ok",
+  "n_images_found": 4952,
+  "n_valid_samples": 4952,
+  "n_missing_annotations": 0,
+  "n_corrupt_images": null,
+  "n_images_without_protocol_objects": 2218,
+  "n_protocol_boxes": 6604,
+  "n_ignore_boxes": 1176,
+  "raw_class_counts": {
+    "person": 5227,
+    "car": 1541,
+    "chair": 1374,
+    "bottle": 657,
+    "pottedplant": 592,
+    "bird": 576,
+    "dog": 530,
+    "sofa": 396,
+    "horse": 395,
+    "boat": 393,
+    "bicycle": 389,
+    "cat": 370,
+    "motorbike": 369,
+    "tvmonitor": 361,
+    "cow": 329,
+    "sheep": 311,
+    "aeroplane": 311,
+    "train": 302,
+    "diningtable": 299,
+    "bus": 254
+  },
+  "protocol_class_counts": {
+    "person": 4528,
+    "car": 1201,
+    "bus": 213,
+    "bicycle": 337,
+    "motorbike": 325
+  },
+  "weather_counts": {
+    "unspecified": 4952
+  },
+  "image_size": {
+    "min": [
+      148,
+      139
+    ],
+    "max": [
+      500,
+      500
+    ],
+    "median": [
+      500.0,
+      375.0
+    ]
+  },
+  "n_issues": 0,
+  "issues": [],
+  "scan_seconds": 6.04
+}

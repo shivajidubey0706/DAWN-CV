@@ -1,0 +1,14 @@
+{
+  "state": "training",
+  "variant": "sg_gate",
+  "seed": 0,
+  "name": "short_real",
+  "updated": "2026-10-22T03:55:20",
+  "epoch": 0,
+  "epochs": 3,
+  "step": 80,
+  "steps": 300,
+  "progress": 0.09,
+  "loss": 5.307107925415039,
+  "eta_s": 283
+}

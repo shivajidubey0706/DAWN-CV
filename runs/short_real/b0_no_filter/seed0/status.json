@@ -1,0 +1,9 @@
+{
+  "state": "done",
+  "variant": "b0_no_filter",
+  "seed": 0,
+  "name": "short_real",
+  "updated": "2026-10-22T03:15:19",
+  "note": "no trainable parameters (frozen detector, no front end)",
+  "progress": 1.0
+}

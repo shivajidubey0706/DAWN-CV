@@ -1,0 +1,22 @@
+{
+  "name": "acdc",
+  "title": "ACDC (Adverse Conditions Dataset with Correspondences)",
+  "format": "coco_json",
+  "root": "C:\\Users\\shiva\\OneDrive\\Desktop\\DAWN\\data\\ACDC",
+  "role": "test",
+  "url": "https://acdc.vision.ee.ethz.ch/",
+  "notes": "Requires registration; boxes from the gt_detection (COCO-format) release.",
+  "class_set": [
+    "person",
+    "bicycle",
+    "car",
+    "bus",
+    "motorbike"
+  ],
+  "available": false,
+  "scanned_at": "2026-10-22T03:11:38",
+  "verify_images": false,
+  "split": null,
+  "status": "missing",
+  "message": "Dataset root not found: C:\\Users\\shiva\\OneDrive\\Desktop\\DAWN\\data\\ACDC. Download manually from https://acdc.vision.ee.ethz.ch/ and set the path."
+}

@@ -1,0 +1,63 @@
+# Defaults shared by every run. Values the paper leaves unspecified are marked
+# ASSUMPTION; per Sec. V-A (iii) they must be fixed on the validation split before
+# any test run, and the search grid reported.
+name: run
+variant: sg_full
+detector_weights: weights/yolov3u.pt     # Ultralytics YOLOv3u (COCO). Not the original Darknet YOLOv3 head.
+train_dataset: voc
+protocol_classes: [person, bicycle, car, bus, motorbike]   # 5-class fog/multi-weather set of [8]
+eval_datasets: [dawn]
+seeds: [0]
+conf_eval: 0.001      # score threshold for AP computation
+conf_pr: 0.25         # fixed threshold for precision / recall / stratified recall
+iou_nms: 0.6
+output_dir: runs
+
+frontend:
+  enabled: true
+  use_bpw: true
+  use_kbl: true
+  gate_mode: one
+  gate_grid: null       # null -> encoder grid (8x8 for 256 input)
+  gate_kbl: false
+  b0: 2.0               # paper: b0 in {0, 2}
+  use_gate_features: true
+  use_gate_cues: true
+  n_intervals: 8        # ASSUMPTION: L unspecified in [8]
+  encoder_input: 256    # ASSUMPTION (paper Sec. V-C)
+  kbl_kernel_scale: 1.0 # paper range k in [-1,1]; constraint mechanism unspecified
+  cue_radius: 7         # ASSUMPTION r
+  tau_hi: 0.95          # ASSUMPTION
+  tau_b: 0.6            # ASSUMPTION
+  s: 0.05               # ASSUMPTION
+
+loss:
+  lambda_s: 0.0
+  lambda_tv: 0.0
+  eta: 1.0              # ASSUMPTION
+  sat_on: blended
+
+aug:
+  p_bpw: 0.5            # ASSUMPTION: probability of the ERUP random-curve augmentation
+  bpw_strength: 1.0
+  p_sha: 0.0
+  sha_scatter_prob: 0.0
+  hflip: 0.5
+
+train:
+  epochs: 80            # [8]
+  batch_size: 6         # [8]
+  imgsz: 448            # [8]
+  lr0: 1.0e-4           # [8] cosine 1e-4 -> 1e-6
+  lr_min: 1.0e-6
+  momentum: 0.9         # paper's assumption
+  weight_decay: 5.0e-4  # [8]
+  seed: 0
+  amp: true
+  freeze_detector: true # DEVIATION: [8] trains YOLOv3 jointly; see docs/METHOD_NOTES.md
+  max_train_images: null
+  max_val_images: null
+  val_fraction: 0.1
+  num_workers: 0
+  deterministic: false
+  log_every: 20

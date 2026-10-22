@@ -1,0 +1,19 @@
+# Short real study that fits a 4 GB laptop GPU (RTX 2050). This is NOT the paper's protocol:
+#  * detector frozen (COCO-pretrained YOLOv3u); only the front end is trained
+#  * 1,200 VOC 2007+2012 trainval images with protocol objects (fixed subset), 3 epochs
+#  * 2 paired seeds instead of 8; lr 1e-3 (cosine -> 1e-6) because the front end starts from scratch
+#  * hyperparameters NOT tuned on the validation split (provisional values from configs/variants.yaml)
+# Evaluation: all 1,027 DAWN images (fog / rain / sand / snow), 5 protocol classes, 448 input.
+name: short_real
+seeds: [0, 1]
+eval_datasets: [dawn]
+bootstrap: 200
+ablation_variants: [b0_no_filter, b2_erup, b3_kbl_only, b4_global_gate, b5_fixed_gate,
+                    sg_gate, sg_gate_sat, sg_gate_sha, sg_full]
+train:
+  epochs: 3
+  batch_size: 4
+  max_train_images: 1200
+  max_val_images: 200
+  lr0: 1.0e-3
+  log_every: 20

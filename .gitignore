@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+configs/datasets.local.yaml
+data/
+weights/*.pt
+runs/smoke/
+outputs/
+logs/
+frontend/node_modules/
+frontend/dist/
+*.zip
+.pytest_cache/

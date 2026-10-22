@@ -1,0 +1,77 @@
+# Baselines and SG-ERUP variants (paper Sec. V-B and V-F). Each entry is merged on
+# top of base.yaml. Provisional SG-ERUP weights: lambda_s = 10, lambda_tv = 0.1
+# (ASSUMPTION; to be tuned on the validation split).
+variants:
+  b0_no_filter:
+    label: "B0 · YOLOv3 + BPW aug, no filter"
+    paper_id: B0
+    description: Detector alone; BPW augmentation only affects training when the detector is trained.
+    frontend: {enabled: false}
+
+  b2_erup:
+    label: "B2 · ERUP (BPW + KBL)"
+    paper_id: B2
+    description: ERUP-YOLO reproduction; the gate is identically one.
+    frontend: {gate_mode: one}
+
+  b3_kbl_only:
+    label: "B3 · ERUP KBL-only"
+    paper_id: B3
+    description: BPW bypassed (G == 0).
+    frontend: {use_bpw: false}
+
+  bpw_only:
+    label: "ERUP BPW-only"
+    paper_id: "[8] Fig. 7"
+    description: BPW curve without KBL (ablation arm of [8]).
+    frontend: {use_kbl: false, gate_mode: one}
+
+  b4_global_gate:
+    label: "B4 · Global per-image gate"
+    paper_id: B4
+    description: Learned gate pooled to 1x1 (E2-i, 1x1 case).
+    frontend: {gate_mode: global}
+    loss: {lambda_s: 10.0}
+    aug: {p_sha: 0.5}
+
+  b5_fixed_gate:
+    label: "B5 · Fixed hand-designed gate"
+    paper_id: B5
+    description: G = sigmoid(-(mu - tau_b)/s), no learning.
+    frontend: {gate_mode: fixed}
+
+  sg_gate:
+    label: "E2-a · Learned spatial gate"
+    paper_id: E2-a
+    description: Spatial gate only (no L_sat, no SHA).
+    frontend: {gate_mode: learned}
+    loss: {lambda_tv: 0.1}
+
+  sg_lsat_global:
+    label: "E2-b · L_sat only (global BPW)"
+    paper_id: E2-b
+    description: Saturation penalty on ERUP without a gate.
+    frontend: {gate_mode: one}
+    loss: {lambda_s: 10.0}
+
+  sg_gate_sha:
+    label: "E2-c · Gate + SHA (lambda_s = 0)"
+    paper_id: E2-c
+    description: Tests whether detection loss alone teaches the gate.
+    frontend: {gate_mode: learned}
+    loss: {lambda_tv: 0.1}
+    aug: {p_sha: 0.5}
+
+  sg_gate_sat:
+    label: "E2-d · Gate + L_sat, no SHA"
+    paper_id: E2-d
+    frontend: {gate_mode: learned}
+    loss: {lambda_s: 10.0, lambda_tv: 0.1}
+
+  sg_full:
+    label: "E2-e · Full SG-ERUP (gate + L_sat + SHA)"
+    paper_id: E2-e
+    description: Proposed method.
+    frontend: {gate_mode: learned}
+    loss: {lambda_s: 10.0, lambda_tv: 0.1}
+    aug: {p_sha: 0.5}

@@ -1,0 +1,18 @@
+# Full protocol of the paper (Sec. V-C) as far as this codebase supports it:
+# VOC 2007+2012 trainval, 80 epochs, cosine 1e-4 -> 1e-6, wd 5e-4, 448 input, batch 6,
+# 8 paired seeds, joint detector training. Needs a GPU with substantially more than 4 GB
+# when freeze_detector is false. Expect days of compute for the full matrix.
+name: paper_full
+seeds: [0, 1, 2, 3, 4, 5, 6, 7]
+eval_datasets: [dawn, "voc:test", rtts, exdark]
+bootstrap: 1000
+ablation_variants: [b0_no_filter, b2_erup, b3_kbl_only, b4_global_gate, b5_fixed_gate,
+                    sg_gate, sg_lsat_global, sg_gate_sha, sg_gate_sat, sg_full]
+train:
+  epochs: 80
+  batch_size: 6
+  imgsz: 448
+  lr0: 1.0e-4
+  lr_min: 1.0e-6
+  freeze_detector: false
+  deterministic: true

@@ -1,0 +1,69 @@
+# Dataset registry. Paths are relative to the project root unless absolute.
+# Local overrides (set from the web UI or by hand) go in configs/datasets.local.yaml,
+# which is git-ignored and takes precedence.
+#
+# role: test   -> used only for final testing (paper leakage control ii)
+#       train  -> training / validation source
+datasets:
+  dawn:
+    title: DAWN (Detection in Adverse Weather Nature)
+    format: dawn
+    root: data/DAWN
+    role: test
+    class_set: protocol5
+    url: https://data.mendeley.com/datasets/766ygrbt8y/3
+    notes: 1,027 web images in Fog/Rain/Sand/Snow folders with PASCAL VOC XML. No official split.
+  voc:
+    title: PASCAL VOC 2007 + 2012
+    format: voc
+    root: data/VOC/VOCdevkit
+    role: train
+    class_set: protocol5
+    url: http://host.robots.ox.ac.uk/pascal/VOC/
+    notes: Train on 2007+2012 trainval (minus a fixed 10% validation split); test on 2007 test.
+  rtts:
+    title: RTTS (RESIDE real-world task-driven testing set)
+    format: voc_flat        # JPEGImages/ + Annotations/
+    root: data/RTTS
+    role: test
+    class_set: protocol5
+    url: https://sites.google.com/view/reside-dehaze-datasets
+    notes: Manual download (Google Drive / Baidu links on the RESIDE page).
+  exdark:
+    title: ExDark (Exclusively Dark)
+    format: exdark          # ExDark/<Class>/<img>, ExDark_Annno/<Class>/<img>.txt
+    root: data/ExDark
+    role: test
+    class_set: lowlight10
+    url: https://github.com/cs-chan/Exclusively-Dark-Image-Dataset
+    notes: Manual download from the GitHub page.
+  bdd100k:
+    title: BDD100K (weather-tagged validation images)
+    format: bdd             # images/100k/val + labels/det_20/det_val.json
+    root: data/BDD100K
+    role: test
+    class_set: protocol5
+    split: val
+    weather: [foggy, rainy, snowy]
+    include_night: true
+    url: https://bdd-data.berkeley.edu/
+    notes: Requires registration; download manually.
+  acdc:
+    title: ACDC (Adverse Conditions Dataset with Correspondences)
+    format: coco_json       # rgb_anon/ + gt_detection/*.json
+    root: data/ACDC
+    role: test
+    class_set: protocol5
+    split: val
+    url: https://acdc.vision.ee.ethz.ch/
+    notes: Requires registration; boxes from the gt_detection (COCO-format) release.
+  foggy_cityscapes:
+    title: Foggy Cityscapes
+    format: cityscapes      # leftImg8bit_foggy/ + gtFine/ polygons
+    root: data/FoggyCityscapes
+    role: test
+    class_set: protocol5
+    split: val
+    beta: 0.02
+    url: https://www.cityscapes-dataset.com/
+    notes: Requires registration. Depth-stratified analysis needs the disparity maps as well.

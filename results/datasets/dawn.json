@@ -1,0 +1,67 @@
+{
+  "name": "dawn",
+  "title": "DAWN (Detection in Adverse Weather Nature)",
+  "format": "dawn",
+  "root": "C:\\Users\\shiva\\OneDrive\\Desktop\\DAWN\\data\\DAWN",
+  "role": "test",
+  "url": "https://data.mendeley.com/datasets/766ygrbt8y/3",
+  "notes": "1,027 web images in Fog/Rain/Sand/Snow folders with PASCAL VOC XML. No official split.",
+  "class_set": [
+    "person",
+    "bicycle",
+    "car",
+    "bus",
+    "motorbike"
+  ],
+  "available": true,
+  "scanned_at": "2026-10-22T03:11:12",
+  "verify_images": false,
+  "split": null,
+  "status": "ok",
+  "n_images_found": 1027,
+  "n_valid_samples": 1027,
+  "n_missing_annotations": 0,
+  "n_corrupt_images": null,
+  "n_images_without_protocol_objects": 12,
+  "n_protocol_boxes": 7199,
+  "n_ignore_boxes": 647,
+  "raw_class_counts": {
+    "car": 6454,
+    "truck": 646,
+    "person": 477,
+    "bus": 161,
+    "motorcycle": 81,
+    "bicycle": 26,
+    "train": 1
+  },
+  "protocol_class_counts": {
+    "car": 6454,
+    "person": 477,
+    "motorbike": 81,
+    "bus": 161,
+    "bicycle": 26
+  },
+  "weather_counts": {
+    "fog": 300,
+    "rain": 200,
+    "sand": 323,
+    "snow": 204
+  },
+  "image_size": {
+    "min": [
+      254,
+      161
+    ],
+    "max": [
+      2667,
+      1950
+    ],
+    "median": [
+      1280.0,
+      768.0
+    ]
+  },
+  "n_issues": 0,
+  "issues": [],
+  "scan_seconds": 1.83
+}

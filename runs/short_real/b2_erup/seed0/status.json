@@ -1,0 +1,16 @@
+{
+  "state": "done",
+  "variant": "b2_erup",
+  "seed": 0,
+  "name": "short_real",
+  "updated": "2026-10-22T03:26:19",
+  "epoch": 2,
+  "epochs": 3,
+  "step": 280,
+  "steps": 300,
+  "progress": 1.0,
+  "loss": 2.043292284011841,
+  "eta_s": 9,
+  "best_val_map50": 0.8395066972330497,
+  "train_seconds": 455.8
+}

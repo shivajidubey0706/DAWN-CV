@@ -1,0 +1,58 @@
+{
+  "title": "Spatially Gated, Saturation-Aware Image-Adaptive Processing for Object Detection in Adverse Weather: A Proposed Extension of ERUP-YOLO and a Falsifiable Evaluation Protocol",
+  "status": "Preprint — research proposal, not peer reviewed (October 2026). The method had not been implemented or evaluated when the paper was written; all tables reporting the proposed method are templates.",
+  "abstract": "Image-adaptive object detectors place a small, differentiable image-processing stage in front of a detector and learn its parameters end-to-end from the detection loss. ERUP-YOLO, built on YOLOv3, unifies classical pixel-wise filters into one Bézier-curve pixel-wise (BPW) filter and sharpening/defogging into one kernel-based local (KBL) filter. Its authors report that the globally applied BPW curve can brighten regions that are already bright because of atmospheric scattering, and that on the sand subset of DAWN ERUP-YOLO scores 27.82 mAP@0.5 against 31.18 for a YOLOv3 baseline trained with the same augmentation. A re-reading of the published numbers shows that five of the seven per-condition gains over that matched baseline are below 1.6 points, comparable to the run-to-run spread reported for eight repeated trainings. The paper proposes, but does not evaluate, a minimal extension that keeps BPW and KBL and adds (i) a low-resolution spatial gate (~1k parameters) that blends the BPW output with the unprocessed image using learned features and explicit luminance and haze cues, (ii) a saturation-aware penalty on brightening already-bright regions, and (iii) spatially heterogeneous photometric augmentation. ERUP-YOLO is the special case where the gate is identically one. Four falsifiable hypotheses, a paired multi-seed design, cross-dataset tests, brightness- and size-stratified analysis and a cost protocol are specified.",
+  "problem": "The BPW curve is a global mapping (one curve per colour channel for the whole image), so it cannot brighten a dark foreground without also brightening a hazy background of similar or higher intensity. ERUP-YOLO's authors attribute its DAWN-sand regression (27.82 vs 31.18 mAP@0.5) and a smaller BPW+KBL vs KBL-only drop on foggy sets to this.",
+  "research_questions": [
+    "RQ1: Does restricting the BPW curve spatially, using a learned gate conditioned on luminance and haze cues, recover the sand and fog accuracy lost by ERUP-YOLO relative to a matched YOLOv3 baseline?",
+    "RQ2: Does it do so without a meaningful loss on low-light and clear-weather data?",
+    "RQ3: Is the effect caused by the intended mechanism (less brightening of already-bright regions) rather than extra capacity or a changed training recipe?",
+    "RQ4: Are differences larger than seed-to-seed variation, and do they persist on datasets and conditions not used for any design decision?"
+  ],
+  "hypotheses": [
+    "H1 (benefit): Δ(DAWN-sand) > 0 and Δ ≥ 0 for DAWN-fog and RTTS.",
+    "H2 (non-inferiority): for VOC test, VOC-Dark and ExDark the lower bound of the one-sided 95% CI of Δ is above −0.5 mAP points.",
+    "H3 (mechanism): on DAWN-sand, DAWN-fog and RTTS, SG-ERUP lowers NSR and raises recall for boxes in the brightest tertile, relative to ERUP-YOLO.",
+    "H4 (spatial vs global): a spatial gate outperforms a single per-image gate of equal training recipe on DAWN-sand and DAWN-fog."
+  ],
+  "gaps": [
+    {"gap": "A. Oversaturation of bright regions (fog, sand)", "status": "Established (phenomenon); mechanism tentative", "closes": "Spatially controlled BPW; NSR and bright-tertile recall; paired multi-seed test (H1–H3)"},
+    {"gap": "B. Generalization to unseen conditions", "status": "Supported", "closes": "Photometric vs particulate split; BDD100K/ACDC; single-DG benchmark"},
+    {"gap": "C. Accuracy vs cost", "status": "Supported", "closes": "Measured cost table (E7) with a fixed protocol"},
+    {"gap": "D. Small, distant, low-contrast objects", "status": "Tentative", "closes": "Size-stratified AP; distance only where depth exists"},
+    {"gap": "E. Robustness and failure detection", "status": "Tentative", "closes": "Severity sweeps; ECE/D-ECE; TIDE"},
+    {"gap": "F. Ablation and reproducibility", "status": "Supported", "closes": "Full ablation, 8 paired seeds, released configurations"}
+  ],
+  "equations": [
+    {"id": "1", "name": "BPW filter", "tex": "B_{\\theta_B}(I)_c(x) = f_c\\big(I_c(x);\\theta_B\\big),\\quad \\theta_B \\in [-1,1]^{12}"},
+    {"id": "2", "name": "KBL filter", "tex": "K_{\\theta_K}(J)_c = \\mathrm{clip}\\big(J_c \\odot (k^1_c * J_c) + k^2_c * J_c + J_c,\\,0,\\,1\\big)"},
+    {"id": "3", "name": "Local luminance", "tex": "\\mu(x) = (A_r * Y)(x)"},
+    {"id": "4", "name": "Dark channel", "tex": "\\delta(x) = \\min_{y\\in\\Omega_r(x)} \\min_c I_c(y)"},
+    {"id": "5", "name": "Near-saturated fraction", "tex": "\\rho(x) = \\big(A_r * \\mathbb{1}[\\max_c I_c > \\tau_{hi}]\\big)(x)"},
+    {"id": "6", "name": "Gate head", "tex": "g = \\sigma\\big(W_F F + W_C C + b\\big) \\in (0,1)^{h\\times w}"},
+    {"id": "7", "name": "Blend", "tex": "\\tilde I = G \\odot B_{\\theta_B}(I) + (1-G)\\odot I,\\quad G = U(g)"},
+    {"id": "8", "name": "Detection", "tex": "\\hat I = K_{\\theta_K}(\\tilde I),\\quad \\text{prediction} = D_\\omega(\\hat I)"},
+    {"id": "9", "name": "Saturation-aware penalty", "tex": "L_{sat} = \\frac{1}{HW}\\sum_x \\Big[\\beta(x)\\,\\mathrm{ReLU}(\\tilde Y(x)-Y(x))^2 + \\eta\\,\\mathrm{ReLU}(\\tilde Y(x)-\\tau_{hi})\\,\\mathbb{1}[Y(x)\\le\\tau_{hi}]\\Big],\\quad \\beta = \\sigma\\big((\\mu-\\tau_b)/s\\big)"},
+    {"id": "10", "name": "Gate smoothness", "tex": "L_{tv} = \\frac{1}{hw}\\sum_{i,j} |g_{i+1,j}-g_{i,j}| + |g_{i,j+1}-g_{i,j}|"},
+    {"id": "11", "name": "Training objective", "tex": "L = L_{det}\\big(D_\\omega(\\hat I), \\mathcal{Y}\\big) + \\lambda_s L_{sat} + \\lambda_{tv} L_{tv}"},
+    {"id": "12", "name": "Spatially heterogeneous augmentation", "tex": "I_{aug} = M \\odot B_{\\theta_a}(I) + (1-M)\\odot B_{\\theta_a'}(I)"},
+    {"id": "13", "name": "Newly-saturated ratio", "tex": "\\mathrm{NSR} = \\frac{1}{HW}\\sum_x \\mathbb{1}\\big[\\tilde Y(x) > \\tau_{hi} \\wedge Y(x) \\le \\tau_{hi}\\big]"},
+    {"id": "14", "name": "Bright-region brightening", "tex": "\\mathrm{BRB} = \\frac{\\sum_x \\beta(x)\\,\\mathrm{ReLU}(\\tilde Y(x)-Y(x))}{\\sum_x \\beta(x)}"}
+  ],
+  "protocol": [
+    "Training: VOC 2007+2012 trainval, clear images, BPW augmentation (and SHA where stated); 80 epochs, SGD momentum 0.9, cosine 1e-4 → 1e-6, weight decay 5e-4, input 448×448, batch 6.",
+    "Validation: fixed 10% of training images with synthetic fog, gamma darkening and SHA; no test image is used for tuning, early stopping or checkpoint selection.",
+    "Test (in-protocol): VOC 2007 test, VOC-Foggy, VOC-Dark, RTTS, ExDark, DAWN fog/rain/snow/sand. Out-of-protocol: BDD100K weather subsets, ACDC, single-DG benchmark, Foggy Cityscapes.",
+    "Statistics: 8 paired seeds; mean, s.d., 95% t-interval; paired differences with two-sided Wilcoxon signed-rank; Holm correction across the confirmatory family (H1, H2); image-level bootstrap (1,000 resamples).",
+    "Cost: parameters; FLOPs at 448×448 with the convention stated; latency at batch 1 (50 warm-up, 500 timed, median and p90, FP32/FP16); FPS; peak memory."
+  ],
+  "limitations": [
+    "The method is unimplemented in the paper; its benefit is a hypothesis.",
+    "SHA changes the training distribution and could help for reasons unrelated to gating (controlled by B4+SHA and E2-c).",
+    "Cue maps are proxies: the dark channel is high for any bright low-saturation region (white vehicles, overcast sky), not only haze.",
+    "All training data are VOC with synthetic degradations; DAWN-sand is small, web-collected and has no official split.",
+    "Results on YOLOv3 may not transfer to modern detectors.",
+    "Eight seeds give limited power for effects below the seed spread.",
+    "No public ERUP-YOLO implementation was located; several details are unspecified, so reproductions may differ."
+  ]
+}

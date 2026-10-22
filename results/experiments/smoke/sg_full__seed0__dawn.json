@@ -1,0 +1,199 @@
+{
+  "status": "evaluated",
+  "dataset": "dawn",
+  "dataset_title": "DAWN (Detection in Adverse Weather Nature)",
+  "split": null,
+  "variant": "sg_full",
+  "variant_label": "E2-e \u00b7 Full SG-ERUP (gate + L_sat + SHA)",
+  "seed": 0,
+  "run_name": "smoke",
+  "checkpoint": "runs\\smoke\\sg_full\\seed0\\best.pt",
+  "trained": true,
+  "epoch": 1,
+  "val": {
+    "loss": 3.1463324204087257,
+    "map50": 0.8423809523809525,
+    "map50_95": 0.6902582115354393,
+    "n_images": 16
+  },
+  "settings": {
+    "imgsz": 448,
+    "conf_eval": 0.001,
+    "conf_pr": 0.25,
+    "iou_nms": 0.6,
+    "classes": [
+      "person",
+      "bicycle",
+      "car",
+      "bus",
+      "motorbike"
+    ],
+    "limit": 40,
+    "detector": "weights/yolov3u.pt",
+    "frontend": {
+      "enabled": true,
+      "use_bpw": true,
+      "use_kbl": true,
+      "gate_mode": "learned",
+      "gate_grid": null,
+      "gate_kbl": false,
+      "b0": 2.0,
+      "use_gate_features": true,
+      "use_gate_cues": true,
+      "n_intervals": 8,
+      "encoder_input": 256,
+      "kbl_kernel_scale": 1.0,
+      "cue_radius": 7,
+      "tau_hi": 0.95,
+      "tau_b": 0.6,
+      "s": 0.05
+    }
+  },
+  "overall": {
+    "n_images": 40,
+    "classes": [
+      "person",
+      "bicycle",
+      "car",
+      "bus",
+      "motorbike"
+    ],
+    "n_gt": 216,
+    "map50": 0.6912271324941623,
+    "map50_95": 0.4443803358930019,
+    "map_by_iou": {
+      "0.5": 0.6919878801488066,
+      "0.55": 0.6828650119458417,
+      "0.6": 0.6687525827661309,
+      "0.65": 0.654148566496147,
+      "0.7": 0.5577911913381806,
+      "0.75": 0.36737200509506335,
+      "0.8": 0.3194912161116672,
+      "0.85": 0.25846083910108636,
+      "0.9": 0.20611736391172342,
+      "0.95": 0.03681670201537097
+    },
+    "precision": 0.9285714285714286,
+    "recall": 0.6018518518518519,
+    "conf_pr": 0.25,
+    "tp": 130,
+    "fp": 10,
+    "per_class": {
+      "person": {
+        "ap50": 0.7980902777777779,
+        "n_gt": 12,
+        "ap_coco": 0.43073471632877586,
+        "ap50_coco101": 0.7962046204620464
+      },
+      "bicycle": {
+        "ap50": null,
+        "n_gt": 0,
+        "ap_coco": null,
+        "ap50_coco101": null
+      },
+      "car": {
+        "ap50": 0.6918182521988718,
+        "n_gt": 191,
+        "ap_coco": 0.48929487806831407,
+        "ap50_coco101": 0.6905587813212992
+      },
+      "bus": {
+        "ap50": 0.475,
+        "n_gt": 8,
+        "ap_coco": 0.4154125412541253,
+        "ap50_coco101": 0.47920792079207913
+      },
+      "motorbike": {
+        "ap50": 0.8,
+        "n_gt": 5,
+        "ap_coco": 0.4420792079207921,
+        "ap50_coco101": 0.801980198019802
+      }
+    },
+    "sizes": {
+      "small": {
+        "ap": 0.2335973597359736,
+        "ap50": 0.335973597359736,
+        "n_gt": 11
+      },
+      "medium": {
+        "ap": 0.28857408023821357,
+        "ap50": 0.5362126049389553,
+        "n_gt": 92
+      },
+      "large": {
+        "ap": 0.5827431461934388,
+        "ap50": 0.8499276332200867,
+        "n_gt": 113
+      }
+    },
+    "brightness_recall": {
+      "thresholds": [
+        0.506084422270457,
+        0.601806620756785
+      ],
+      "dark": {
+        "recall": 0.6111111111111112,
+        "n_gt": 72
+      },
+      "medium": {
+        "recall": 0.6666666666666666,
+        "n_gt": 72
+      },
+      "bright": {
+        "recall": 0.5277777777777778,
+        "n_gt": 72
+      }
+    },
+    "conventions": {
+      "map50": "VOC all-point interpolation, IoU 0.5",
+      "map50_95": "COCO-style 101-point, IoU 0.50:0.05:0.95, box areas, own implementation",
+      "sizes": "COCO area thresholds 32^2, 96^2 at original resolution",
+      "precision_recall": "score >= 0.25, IoU 0.5, pooled over classes"
+    },
+    "mechanism": {
+      "nsr": 3.7368462244558034e-07,
+      "brb": 4.487569331104169e-05,
+      "nsr_final": 0.0008500079531472693,
+      "brb_final": 0.15702076386660338,
+      "gate_mean": 0.8807877838611603,
+      "definition": "NSR/BRB on I~ (Eq. 13-14); *_final on I^. Mean over images, at detector input resolution."
+    }
+  },
+  "by_weather": {},
+  "frontend_params": 6782070,
+  "detector_params": 103754144,
+  "eval_seconds": 4.7,
+  "environment": {
+    "time": "2026-10-22T03:14:21",
+    "python": "3.14.8",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.2",
+    "cuda_available": true,
+    "cuda": "12.8",
+    "cudnn": 91900,
+    "ultralytics": "8.4.183",
+    "gpu": "NVIDIA GeForce RTX 2050",
+    "gpu_memory_gb": 4.0,
+    "cpu": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel"
+  },
+  "evaluated_at": "2026-10-22T03:14:21",
+  "train_status": {
+    "state": "done",
+    "variant": "sg_full",
+    "seed": 0,
+    "name": "smoke",
+    "updated": "2026-10-22T03:14:15",
+    "epoch": 1,
+    "epochs": 2,
+    "step": 12,
+    "steps": 16,
+    "progress": 1.0,
+    "loss": 2.4242160320281982,
+    "eta_s": 2,
+    "best_val_map50": 0.8423809523809525,
+    "train_seconds": 20.1
+  },
+  "train_history_epochs": 2
+}

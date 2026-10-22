@@ -1,0 +1,23 @@
+{
+  "bpw_slope_both_cps_at_0_1_L8": 169.0,
+  "paper_value": "about 169",
+  "bpw_slope_random_params": {
+    "median": 3.8531618118286133,
+    "mean": 5.0306291580200195,
+    "p90": 8.577922821044922,
+    "paper_value": "about 50"
+  },
+  "encoder_params": 6781042,
+  "encoder_params_paper": "6.78 M",
+  "encoder_gmac": {
+    "256": 4.945594368,
+    "448": 15.144830976
+  },
+  "encoder_gmac_paper": {
+    "256": 4.95,
+    "448": 15.14
+  },
+  "gate_params": 1028,
+  "gate_params_paper": 1028,
+  "note": "MACs from torch FlopCounterMode / 2 (conv + linear only)."
+}
